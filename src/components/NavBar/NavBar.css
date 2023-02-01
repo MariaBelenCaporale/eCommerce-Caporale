@@ -1,0 +1,28 @@
+.navPadre {
+    background-color: #E8E2E2;
+    width: 100%;
+    height: auto;
+    display: flex;
+}
+
+.imgLogo {
+    width: 100px;
+    height: 100px;
+}
+
+.constLista {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.lista {
+    list-style-type: none;
+    font-size: 1.4rem;
+}
+
+.btnNav {
+    color: black;
+    text-decoration: none;
+}
