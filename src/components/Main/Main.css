@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Paytone+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap');
+
+.mainPadre {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #181818;
+    height: auto;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    width: 100%;
+}
+
+.textoMain {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 5rem;
+}

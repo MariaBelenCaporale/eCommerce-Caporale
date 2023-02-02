@@ -1,0 +1,27 @@
+.padreCarrito {
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    padding-right: 2rem;
+}
+
+.padreImgCarrito {
+    background-color: white;
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.imgCarrito {
+    width: 30px;
+    height: 30px;
+}
+
+.carritoTotal {
+    color: white;
+    padding-right: 1rem;
+    padding-left: 2rem;
+}
