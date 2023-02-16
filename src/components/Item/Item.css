@@ -1,0 +1,23 @@
+.marciano {
+    background-color: #403bef;
+}
+
+.marciano-pic {
+    width: 50%;
+}
+
+.marciano-info {
+    display: flex;
+    width: 100%;
+    color: white;
+    height: 50vh;
+}
+
+.data-marciano {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 10px;
+}
+

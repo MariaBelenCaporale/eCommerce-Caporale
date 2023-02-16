@@ -1,13 +1,46 @@
-.navPadre {
-    width: 100%;
-    height: auto;
+.navbar {
+    width: auto;
+    height: 10vh;
     display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px;
 }
 
-.constLista {
+.lista {
     display: flex;
     align-items:center;
+    justify-content: center;
+    gap: 4rem;
+}
+
+.lista a {
+    text-decoration: none;
+    font-family: 'Montserrat';
+    font-weight: 700;
+}
+
+.lista a:hover {
+    color: #fb106c;
+}
+
+/* LOGO */
+
+.container-logo {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 10%;
+}
+
+.logo {
     width: 100%;
-    gap: 2rem;
-    justify-content:flex-end;
+}
+
+.active {
+    color: #f9c900;
+}
+
+.inactive {
+    color: white;
 }

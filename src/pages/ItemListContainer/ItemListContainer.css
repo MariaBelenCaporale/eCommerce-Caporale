@@ -1,0 +1,13 @@
+.lista {
+    list-style-type: none;
+}
+
+.padreCard {
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    width: auto;
+    height: 10vh;
+    align-items: center;
+    justify-content: center;
+}

@@ -2,17 +2,13 @@
   margin: 0;
   padding: 0;
 }
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400&display=swap');
+
 .App-header {
   padding-top: 2rem;
   height: auto;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #181818;
 }
 
-.loguito {
-  padding-left: 2rem;
-  width: 4rem;
-  height: auto;
-}

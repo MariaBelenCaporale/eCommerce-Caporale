@@ -1,25 +1,26 @@
-import loguito from '../src/components/Assets/loguito.png'
 import './App.css';
-import Main from './components/Main/Main';
-import NavBar from './components/NavBar/NavBar';
-import ItemListContainer from './components/ItemListContainer/ItemListContainer';
-import SectionCards from './components/SectionCards/SetionCards';
-
-
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import NavBar from '../src/components/NavBar/NavBar';
+import ItemListContainer from './pages/ItemListContainer/ItemListContainer'
+import ItemDetailContainer from './pages/ItemDetailContainer/ItemDetailContainer';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src = {loguito} className = "loguito" alt = "loguito" />
-        <NavBar/>
-        <ItemListContainer/>
-      </header>
-      <Main/>
-      <SectionCards/>
+    <BrowserRouter>
+        <NavBar />
+      <Routes>
+        {/* probar de poner el home aca */}
+        <Route path="/" element={<ItemListContainer />} />
+        <Route path="/category/:categoryId" element={<ItemListContainer />} />
 
-    </div>
+        {/* <Route path="*" element={} */}
+        <Route path="/item/:id" element={<ItemDetailContainer />} />
+        
+      </Routes>
+    </BrowserRouter>
+
   );
 }
 
 export default App;
+

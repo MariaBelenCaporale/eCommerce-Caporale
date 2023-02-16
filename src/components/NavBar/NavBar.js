@@ -1,19 +1,66 @@
-import ItemListContainer from '../ItemListContainer/ItemListContainer';
+
 import CartWidget from '../CardWidget/CartWidget';
 import './NavBar.css';
+import logo from '../Assets/logo-02.png';
+import { Link, NavLink } from 'react-router-dom';
 
-export default function NavBar () {
+const NavBar = () => {
     return (
-        <nav className='navPadre'>
-            <ul className='constLista'>
-                <ItemListContainer nombre= "INICIO" />
-                <ItemListContainer nombre= "CONTACTO"/>
-            </ul>
-            <CartWidget/>
-        </nav>
-    );
+        <div className='navbar'>
+            <div className='container-logo'>
+                <img src = {logo} className = "logo" />
+            </div>
+
+            <div>
+                <ul className='lista'>
+                    <li>
+                        <NavLink 
+                        className={({ isActive }) => (isActive ? 'active' : 'inactive')}
+                        to="/"> 
+                            INICIO
+                        </NavLink>
+                    </li>
+
+                    <li>
+                    <NavLink 
+                        className={({ isActive }) => (isActive ? 'active' : 'inactive')}
+                        to="/category/EXCURSIONES">
+                            EXCURSIONES
+                        </NavLink>
+                    </li>
+
+                    <li>
+                    <NavLink 
+                        className={({ isActive }) => (isActive ? 'active' : 'inactive')}
+                        to="/category/SOL">
+                            SOL
+                        </NavLink>
+                    </li>
+
+                    <li>
+                    <NavLink 
+                        className={({ isActive }) => (isActive ? 'active' : 'inactive')}
+                        to="/category/MARCIANOS">
+                            MARCIANOS
+                        </NavLink>
+                    </li>
+
+                    <li>
+                    <NavLink 
+                        className={({ isActive }) => (isActive ? 'active' : 'inactive')}
+                        to="/category/NAVES">
+                            NAVES
+                        </NavLink>
+                    </li>
+                </ul>
+            </div>
+
+            <div>
+                <CartWidget />
+            </div>
+        </div>
+    )
 }
 
 
-
-
+export default NavBar
