@@ -32,24 +32,8 @@ const NavBar = () => {
                     <li>
                     <NavLink 
                         className={({ isActive }) => (isActive ? 'active' : 'inactive')}
-                        to="/category/SOL">
-                            SOL
-                        </NavLink>
-                    </li>
-
-                    <li>
-                    <NavLink 
-                        className={({ isActive }) => (isActive ? 'active' : 'inactive')}
-                        to="/category/MARCIANOS">
-                            MARCIANOS
-                        </NavLink>
-                    </li>
-
-                    <li>
-                    <NavLink 
-                        className={({ isActive }) => (isActive ? 'active' : 'inactive')}
-                        to="/category/NAVES">
-                            NAVES
+                        to="/nosotros">
+                            NOSOTR@S
                         </NavLink>
                     </li>
                 </ul>

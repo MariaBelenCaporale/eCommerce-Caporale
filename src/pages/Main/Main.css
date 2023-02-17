@@ -67,18 +67,154 @@
 
 @keyframes planeta {
     from {
-    transform: translateY(20px);
+    transform: translateY(-70px);
     }
 
     to {
-    transform: translateY(0px);
+    transform: translateY(70px);
     }
-}
+} 
 
 .planeta {
-    transition: ease;
-    animation-duration: .5s;
-    animation-name: flechita;
+    transition: ease-in;
+    animation-duration: 10s;
+    animation-name: planeta;
     animation-iteration-count: infinite;
-    animation-direction: alternate;
+    animation-direction:alternate;
+}
+
+
+.adquiriPadre {
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    flex-direction: column;
+}
+
+.adquiriHijo {
+    margin-top: 6%;
+    font-size: 3rem;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    z-index: 1;
+    color: white;
+    width: 20%;
+    position: absolute;
+    font-family: 'Montserrat';
+    line-height: 1.4;
+}
+
+.spanAdquiri {
+    border: 2px solid white;
+    width: auto;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    height: 7vh;
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.adquiriTexto {
+    width: auto;
+    color: white;
+    font-family: 'Montserrat';
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 14%;
+    font-size: 1rem;
+}
+
+
+/********* QUIENES SOMOS *********/
+
+
+.quienesPadre {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    flex-direction: column;
+}
+
+.quienesHijo {
+    font-size: 3rem;
+    align-items:flex-start;
+    justify-content:flex-start;
+    display: flex;
+    color: white;
+    width: 20%;
+    font-family: 'Montserrat';
+    margin-bottom: 5rem;
+}
+
+.spanQuienes {
+    border: 2px solid white;
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 7vh;
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.quienesSomos {
+    color: white;
+    font-family: 'Montserrat';
+    width: 100%;
+    display: flex;
+    font-size: 2rem;
+    align-items: center;
+    padding-left: 50px;
+}
+
+.orden {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.quienesTexto {
+    margin-top: 2rem;
+    width: 40%;
+    color: white;
+    font-family: 'Montserrat';
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    padding-left: 50px;
+}
+
+.quienesBoton {
+    margin-top: 3%;
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 1rem;
+    text-decoration: none;
+    background-color: #f9c900;
+    border: none;
+    height: 5vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    margin-left: 50px;
+    width: 20%;
+}
+
+.quienesBoton:hover {
+    background-color: antiquewhite;
 }

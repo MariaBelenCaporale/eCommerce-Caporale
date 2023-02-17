@@ -7,7 +7,7 @@ export const products = [
         price: "150 USD",
         duration: "30 min",
         stock: 10,
-        category: "MARCIANOS",
+        category: "EXCURSIONES",
         image: '/img/principe-marciano.png'
     },
     {
@@ -18,7 +18,7 @@ export const products = [
         price: "100 USD",
         duration: "10 min",
         stock: "10",
-        category: "NAVES",
+        category: "EXCURSIONES",
         image: '/img/caminata-espacial.png'
     },
     {
@@ -29,7 +29,7 @@ export const products = [
         price: "90 USD",
         duration: "5 min",
         stock: 10,
-        category: "SOL",
+        category: "EXCURSIONES",
         image: '/img/bronceate.png'
     },
     {
@@ -40,7 +40,7 @@ export const products = [
         price: "120 USD",
         duration: "Inchequeable",
         stock: 10,
-        category: "NAVES",
+        category: "EXCURSIONES",
         image: '/img/agujero-negro.png'
     },
     {
@@ -51,7 +51,7 @@ export const products = [
         price: "120 USD",
         duration: "30 min",
         stock: 10,
-        category: "NAVES",
+        category: "EXCURSIONES",
         image: '/img/nave.png'
     },
     {
@@ -62,7 +62,7 @@ export const products = [
         price: "150 USD",
         duration: "1 seg",
         stock: 10,
-        category: "NAVES",
+        category: "EXCURSIONES",
         image: '/img/montar.png'
     },
 ]

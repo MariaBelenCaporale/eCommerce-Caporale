@@ -1,0 +1,50 @@
+
+
+.nosotrosPadre {
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    flex-direction: column;
+}
+
+.nosotrosHijo {
+    font-size: 3rem;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    color: white;
+    width: 20%;
+    position: absolute;
+    font-family: 'Montserrat';
+    line-height: 1.4;
+    margin-bottom: 10%;
+}
+
+.spanNosotros {
+    border: 2px solid white;
+    width: auto;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    height: 7vh;
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.nosotrosTexto {
+    width: 50%;
+    color: white;
+    font-family: 'Montserrat';
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 14%;
+    font-size: 1rem;
+}
+
+
+
