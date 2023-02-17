@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { products } from "../../data/products";
 import ItemDetail from "../../components/ItemDetail/ItemDetail";
+import './ItemDetailContainer.css';
 
 
 const ItemDetailContainer = () => {

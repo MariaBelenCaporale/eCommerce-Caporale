@@ -1,0 +1,84 @@
+
+.bienvenida {
+    background-color: white;
+    height: 10vh;
+}
+
+.container {
+    align-items: center;
+    /* position: relative; */
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: #000036;
+}
+
+.containerTitulo {
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    position: absolute;
+}
+
+.tituloWeb {
+    font-size: 3rem;
+    align-items: center;
+    justify-content: flex-end;
+    display: flex;
+    z-index: 1;
+    color: white;
+    width: 20%;
+    position: absolute;
+    font-family: 'Montserrat';
+    line-height: 1.4;
+}
+
+.span {
+    border: 2px solid white;
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 7vh;
+    padding: 4px;
+    padding-right: 10px;
+}
+
+.contieneImg {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-img {
+    display: flex;
+    width: 90%;
+    box-shadow: 0 0 60px 0 rgb(0 0 0);
+    align-items: center;
+    justify-content: center;
+}
+
+
+.planeta {
+    width: 25%;
+}
+
+@keyframes planeta {
+    from {
+    transform: translateY(20px);
+    }
+
+    to {
+    transform: translateY(0px);
+    }
+}
+
+.planeta {
+    transition: ease;
+    animation-duration: .5s;
+    animation-name: flechita;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}

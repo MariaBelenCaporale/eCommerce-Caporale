@@ -1,23 +1,51 @@
 .marciano {
     background-color: #403bef;
+    width: 100%;
+    display: flex;
+    align-items: center;
 }
 
 .marciano-pic {
-    width: 50%;
+    width: 70%;
 }
 
 .marciano-info {
     display: flex;
-    width: 100%;
+    width: auto;
     color: white;
-    height: 50vh;
-}
-
-.data-marciano {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
+    height: auto;
     padding: 10px;
 }
 
+.data-marciano {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-right: 4rem;
+    color: white;
+    text-decoration: none;
+}
+
+.titulo, .precio {
+    padding-bottom: 10px;
+}
+
+.botonCompra {
+    margin-top: 15px;
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 1rem;
+    text-decoration: none;
+    background-color: #f9c900;
+    border: none;
+    height: 5vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.botonCompra:hover {
+    background-color: antiquewhite;
+}

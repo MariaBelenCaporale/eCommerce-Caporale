@@ -1,0 +1,45 @@
+
+
+.pa {
+    margin-top: 10%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.padreDetail {
+    display: flex;
+    background-color: #403bef;
+    align-items: center;
+    width: 70%;
+    justify-content: center;
+    height: auto;
+    padding: 20px;
+}
+
+.imgDetail {
+    width: 50%;
+}
+
+.detail {
+    display: flex;
+    width: 50%;
+}
+
+.detalles {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 10px;
+    color: white;
+    font-family: 'Montserrat';
+}
+
+.textoDetalles {
+    width: 80%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
