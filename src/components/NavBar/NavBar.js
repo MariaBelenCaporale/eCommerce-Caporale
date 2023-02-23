@@ -37,7 +37,7 @@ const NavBar = () => {
                         className={({ isActive }) => (isActive ? 'active' : 'inactive')}
                         to="/nosotros">
                             NOSOTR@S
-                        </NavLink>
+                    </NavLink>
                     </li>
                 </ul>
             </div>

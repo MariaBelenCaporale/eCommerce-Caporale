@@ -34,5 +34,15 @@
     list-style: none;
     display: flex;
     gap: 3rem;
+    width: 100%;
+}
+
+.enlaces-cuentas {
+    color: white;
+    text-decoration: none;
+}
+
+.enlaces-cuentas:hover {
+    color: #fb106c;
 }
 
