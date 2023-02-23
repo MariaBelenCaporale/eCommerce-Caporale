@@ -1,0 +1,84 @@
+
+.expePadre {
+    height: 75vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    flex-direction: column;
+}
+
+.expeHijo {
+    margin-top: 6%;
+    font-size: 3rem;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    z-index: 1;
+    color: white;
+    width: 20%;
+    position: absolute;
+    font-family: 'Montserrat';
+    line-height: 1.4;
+}
+
+.spanExpe {
+    border: 2px solid white;
+    width: auto;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    height: 7vh;
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.expeTexto {
+    width: auto;
+    color: white;
+    font-family: 'Montserrat';
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 14%;
+    font-size: 1rem;
+}
+
+
+
+.astro-padre {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: absolute;
+    margin-top: 35%;
+}
+
+.astro {
+    width: 15%;
+}
+
+
+@keyframes astro {
+    from {
+    transform: translateY(-10px);
+    }
+
+    to {
+    transform: translateY(10px);
+    }
+} 
+
+.astro {
+    transition: ease-in-out;
+    animation-duration: 2s;
+    animation-name: vaca;
+    animation-iteration-count: infinite;
+    animation-direction:alternate;
+}
+
+

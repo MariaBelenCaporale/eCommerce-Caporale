@@ -7,9 +7,12 @@ import { Link, NavLink } from 'react-router-dom';
 const NavBar = () => {
     return (
         <div className='navbar'>
-            <div className='container-logo'>
+            
+            <NavLink className={"container-logo"} to="/">
+            
                 <img src = {logo} className = "logo" />
-            </div>
+         
+            </NavLink>
 
             <div>
                 <ul className='lista'>
@@ -24,8 +27,8 @@ const NavBar = () => {
                     <li>
                     <NavLink 
                         className={({ isActive }) => (isActive ? 'active' : 'inactive')}
-                        to="/category/EXCURSIONES">
-                            EXCURSIONES
+                        to="/Experiencias">
+                            EXPERIENCIAS
                         </NavLink>
                     </li>
 

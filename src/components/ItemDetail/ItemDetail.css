@@ -1,7 +1,11 @@
-
+.detalles-section {
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
 .pa {
-    margin-top: 10%;
     width: 100%;
     align-items: center;
     justify-content: center;
@@ -10,12 +14,13 @@
 
 .padreDetail {
     display: flex;
-    background-color: #403bef;
+    background-color: #fb106c;
     align-items: center;
     width: 70%;
     justify-content: center;
     height: auto;
     padding: 20px;
+    margin-top: 4rem;
 }
 
 .imgDetail {

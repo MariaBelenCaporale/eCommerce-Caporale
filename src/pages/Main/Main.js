@@ -23,7 +23,7 @@ const Main = () => {
             {url === '/Main' && <div> ENCABEZADO</div>}
         <div>
 
-        <div className='container'>
+        <div className='container-inicio'>
             <div className='containerTitulo'>
                 <div>
                     <img className='planeta' src='./img/planeta-03.png' />
@@ -45,22 +45,32 @@ const Main = () => {
             {item.map((item) => <div>{item} </div>)}
             <ItemListContainer />
 
+
+<section className='section-quienes'>
+<h2 className='quienesHijo'> <span className='spanQuienes'>GALÁCTICA </span></h2>
             <div className='quienesPadre'>
-                <h2 className='quienesHijo'> <span className='spanQuienes'>GALÁCTICA </span></h2>
+                
             <div className='orden'>
                 <h3 className='quienesSomos'>¿QUIÉNES SOMOS?</h3>
                 <p className='quienesTexto'>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>
-
                 
-                <button className='quienesBoton'>EXPERIENCIAS
-                </button>
+                <Link to={"/Experiencias"} className='quienesBoton'>EXPERIENCIAS
+                </Link>
+
 
                 
                 
 
              
                 </div>
+
+                <div className='ovni-padre'>
+                    <img className='ovni-img' src='./img/ovni-02.png'/>
+                    <img className='vaca' src='./img/vaca-02.png' />
+                </div>
             </div>
+
+            </section>
         </div>
         </div>
 

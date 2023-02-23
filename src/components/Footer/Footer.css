@@ -1,0 +1,38 @@
+.footer {
+    background-color: #000036;
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    height: auto;
+
+    box-shadow: 0 0 60px 0 rgb(0 0 0);
+}
+
+.container-footer {
+    display: flex;
+    padding-top: 2rem;
+    padding-left: 6rem;
+    padding-bottom: 2rem;
+    flex-direction: column;
+    padding-right: 6rem;
+}
+
+.container-list {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo-footer {
+    width: 15%;
+}
+
+.list {
+    font-family: 'Montserrat';
+    list-style: none;
+    display: flex;
+    gap: 3rem;
+}
+

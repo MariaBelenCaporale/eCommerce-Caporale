@@ -1,5 +1,4 @@
 .itemList {
-
     padding: 50px;
     background: #000036;
     align-items: center;
@@ -11,7 +10,12 @@
     gap: 3rem;
     width: auto;
     margin: 5%;
+    margin-top: 0;
     box-shadow: 0 0 60px 0 rgb(0 0 0);
-
-
+    position: relative;
 }
+
+.linkUno {
+    text-decoration: none;
+}
+

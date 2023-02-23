@@ -10,11 +10,11 @@ const ItemList = ({productList}) => {
         <div className="itemList">
             {productList.map((product) => (
                     <div key={product.id}>
-                        <Link to={`/item/${product.id}`}>
+                        <Link className="linkUno" to={`/item/${product.id}`}>
                             <Item product={product} />
                         </Link>
-
                     </div>
+
                 ))
             }
         </div>

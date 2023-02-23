@@ -1,10 +1,15 @@
 import './ItemDetail.css'
 import CicloVida from '../CicloVida/CicloVida';
+import NavBar from '../NavBar/NavBar';
 
 
 const ItemDetail = ({detail}) => {
+        
+    
 
-    return <div className='pa'>
+    return (
+    <section className='detalles-section'>
+     <div className='pa'>
     <div className='padreDetail'>
 
         <div className='detail'>
@@ -25,7 +30,9 @@ const ItemDetail = ({detail}) => {
         
     </div>;
     </div>
-};
+
+    </section>
+)};
 
 export default ItemDetail;
 
