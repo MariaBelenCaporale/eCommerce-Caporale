@@ -1,0 +1,16 @@
+.masMenos {
+    cursor: pointer;
+    background-color: white;
+    border: none;
+    width: 40px;
+    height: auto;
+    font-size: 1.5rem;
+}
+
+.spanCount {
+    font-size: 1.2rem;
+    font-family: 'Montserrat';
+    font-weight: 500;
+    width: 100%;
+    display: flex
+}

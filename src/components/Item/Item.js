@@ -5,14 +5,14 @@ import './Item.css';
 const Item = ({product}) => {
     return <div className="marciano">
         <div className="marciano-info">
-        <img className="marciano-pic" alt={product.name} src={product.image} />
+        <img className="marciano-pic" alt={product.name} src={`./img/${product.image}`} />
         </div>
 
         <div className="data-marciano">
                 <h2 className="titulo">{product.name}</h2>
-                <h3 className="precio">{product.price}</h3>
+                <h3 className="precio">USD {product.price}</h3>
                 <p className="detalle">{product.description}</p>
-                <button className="botonCompra"> Agregar al carrito</button>
+                <button className="botonCompra"> VER DETALLE</button>
 
         </div>
             

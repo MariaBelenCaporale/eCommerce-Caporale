@@ -1,26 +1,35 @@
 .detalles-section {
-    height: 80vh;
+    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
+.descript {
+    margin-bottom: 2rem;
+}
+
 .pa {
+    margin-top: 13rem;
     width: 100%;
     align-items: center;
     justify-content: center;
     display: flex;
+    margin-bottom: 3rem;
 }
 
 .padreDetail {
-    display: flex;
-    background-color: #fb106c;
+    padding: 50px;
     align-items: center;
-    width: 70%;
+    font-family: 'Montserrat', sans-serif;
+    display: grid;
+    grid-template-columns: .6fr 1fr;
     justify-content: center;
     height: auto;
-    padding: 20px;
-    margin-top: 4rem;
+    margin-bottom: 5%;
+    width: 80%;
+
+    box-shadow: 0 0 60px 0 rgb(0 0 0);
 }
 
 .imgDetail {
@@ -28,8 +37,9 @@
 }
 
 .detail {
+    width: 100%;
     display: flex;
-    width: 50%;
+    justify-content: center;
 }
 
 .detalles {
@@ -43,8 +53,81 @@
     font-family: 'Montserrat';
 }
 
+.detail-name {
+    margin-bottom: 1rem;
+    font-size: 2em;
+}
+
+.detail-duration {
+    font-size: .9rem;
+    font-weight: 500;
+    margin-bottom: 2rem;
+}
+
+.descriptionDetail {
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.usd {
+    font-size: 1.8em;
+    font-weight: 200;
+    padding-bottom: 30px;
+}
+
 .textoDetalles {
     width: 80%;
     padding-top: 20px;
     padding-bottom: 20px;
+}
+
+.botonesPreCompra {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+
+.boton-pre {
+    padding: 15px;
+    margin-top: 15px;
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 1rem;
+    text-decoration: none;
+    background-color:#f9c900;
+    border: none;
+    width: 33%;
+    height: 5vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.ver {
+background-color:#f9c900;
+}
+
+.boton-pre:hover {
+    background-color: antiquewhite;
+}
+
+
+
+
+.Toastify__progress-bar--success {
+    background-color:#f9c900 !important;
+}
+
+
+.Toastify__toast-theme--light {
+    background-color: #fb106c !important;
+}
+
+
+.Toastify__toast-body {
+    color: white !important;
 }

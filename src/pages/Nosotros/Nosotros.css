@@ -8,13 +8,13 @@
 }
 
 .quienes-Padre {
-    height: 90vh;
-    margin-top: 70px;
+    height: 80vh;
     display: flex;
     align-items: center;
     justify-content: center;
     width: 100%;
     flex-direction: row;
+    margin-top: 7rem;
 }
 
 

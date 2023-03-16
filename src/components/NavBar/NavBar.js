@@ -3,8 +3,11 @@ import CartWidget from '../CardWidget/CartWidget';
 import './NavBar.css';
 import logo from '../Assets/logo-02.png';
 import { Link, NavLink } from 'react-router-dom';
+import { useContext } from 'react';
+
 
 const NavBar = () => {
+
     return (
         <div className='navbar'>
             

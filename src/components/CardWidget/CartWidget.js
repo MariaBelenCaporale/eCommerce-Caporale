@@ -1,15 +1,30 @@
 import './CartWidget.css';
-import ecarrito from '../Assets/ecarrito.png';
+import { useContext, useEffect, useState } from 'react';
+import { CartContext } from '../../Context/CartContext';
+import { Link } from 'react-router-dom';
 
 
-export default function CartWidget () {
+const CartWidget = () => {
+      const { cart } = useContext(CartContext);
+      const [ total, setTotal] = useState(0);
+      useEffect(() => {
+        setTotal(cart.reduce((prev, curr) => prev + curr.quantity, 0))
+      }, [cart])
+
   return (
-    <div className='padreCarrito'>
-            <p className='carritoTotal'>1</p>
-      <div className='padreImgCarrito'>
-        <img src = {ecarrito} className = "imgCarrito" alt = "carrito" />
-      </div>
-    </div>
+
+    <Link to={'/cart'} className='estilo-numerito'>
+        <div className='padreCarrito'>
+
+<div className='padreImgCarrito'>
+  <img src='/img/ecarrito-01.png' className='imgCarrito' alt='carrito' />{total}
+</div>
+</div>
+    </Link>
+
+
 
   );
-}
+};
+
+export default CartWidget;

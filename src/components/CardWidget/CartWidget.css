@@ -6,13 +6,11 @@
 }
 
 .padreImgCarrito {
-    background-color: white;
-    width: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 50px;
-    border-radius: 50%;
+    color: white;
+    gap: 0.5rem;
 }
 
 .imgCarrito {
@@ -24,4 +22,9 @@
     color: white;
     padding-right: 1rem;
     padding-left: 2rem;
+}
+
+.estilo-numerito {
+    text-decoration: none;
+    font-family: 'Montserrat';
 }

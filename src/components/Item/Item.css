@@ -1,13 +1,12 @@
 .marciano {
     background-color: #403bef;
-    /* background-color: #fb106c; */
     width: 100%;
     display: flex;
     align-items: center;
 }
 
 .marciano:hover {
-    border-bottom: 2px solid #f9c900;
+    background-color: #fb106c;
 }
 
 .marciano-pic {
@@ -52,5 +51,5 @@
 }
 
 .botonCompra:hover {
-    background-color: antiquewhite;
+    background-color: white;
 }

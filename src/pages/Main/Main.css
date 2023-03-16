@@ -9,7 +9,7 @@
     /* position: relative; */
     display: flex;
     justify-content: center;
-    background-image: url(/public/img/fondo-1-02.png);
+    background-image: url(/public/img/luna-bn-04.png);
     background-size: cover;
 
 }
@@ -86,7 +86,7 @@
 
 
 .adquiriPadre {
-    height: 50vh;
+    margin-top: 82px;
     display: flex;
     align-items: center;
     justify-content: center;

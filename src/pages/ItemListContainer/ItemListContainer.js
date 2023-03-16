@@ -1,40 +1,42 @@
 import './ItemListContainer.css';
-import { products } from '../../data/products';
 import { useEffect, useState } from 'react';
 import ItemList from '../../components/ItemList/ItemList';
 import { useParams } from 'react-router-dom';
-
-const ItemListContainer = ({greeting}) => {
+import { getFirestore, getDocs, collection, query, where} from 'firebase/firestore';
+const ItemListContainer = () => {
 
     const [productList, setProductList] = useState([]);
 
-    //Par que se filtren los objetos (useParams)
+
     const {categoryId} = useParams();
-    console.log(categoryId);
 
-    const getProducts = new Promise((resolve, reject) => {
-        
-        if(categoryId) {
 
-            const filteredProducts = products.filter((item) => item.category === categoryId);
-            setTimeout(() => {
-                resolve(filteredProducts);
-            }, 1000);
+    const getProducts = () => {
+        const db = getFirestore();
+        const queryBase = collection(db, 'products');
+        const querySnapshot = categoryId ?
+        query(queryBase, where('category', '==', categoryId)) : queryBase;
 
-        } else {
-            setTimeout(() => {
-                resolve(products);
-            }, 1000);
-        }
 
-    });
+        getDocs(querySnapshot)
+        .then((response) => {
+            const list = response.docs.map((doc)=> {
+                return {
+                    id: doc.id, 
+                    ...doc.data(),
+                }
+            });
+            setProductList(list);
+            console.log(list);
+        })
+        .catch((error) => console.log(error));
+
+       
+       
+    };
 
     useEffect(() => {
-        getProducts
-        .then((response) =>{
-            setProductList(response);
-        })
-        .catch((error) => {console.log(error);})
+        getProducts();
     }, [categoryId]);
 
     return (

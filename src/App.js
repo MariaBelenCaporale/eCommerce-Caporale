@@ -7,24 +7,32 @@ import Main from './pages/Main/Main';
 import Nosotros from './pages/Nosotros/Nosotros';
 import Footer from './components/Footer/Footer';
 import Experiencias from './pages/Experiencias/Experiencias';
+import Cart from './pages/Cart/Cart';
+import CartProvider from './Context/CartProvider';
 
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 function App() {
   return (
 
     <BrowserRouter>
-        <NavBar /> 
+    <CartProvider>
+    <NavBar /> 
 
-      <Routes>
- 
-        <Route path="/" element={<Main />} />
-        <Route path="/Experiencias" element={<Experiencias />} />
-        <Route path="/nosotros" element={<Nosotros />} />
-        { <Route path="/category/:categoryId" element={<ItemListContainer />} /> }
-        {/* <Route path="*" element={}  armarlo en pages para el error*/}
-        { <Route path="/item/:id" element={<ItemDetailContainer />} />}
+<Routes>
+  
+  <Route path="/" element={<Main />} />
+  <Route path="/Experiencias" element={<Experiencias />} />
+  <Route path="/nosotros" element={<Nosotros />} />
+   <Route path="/category/:categoryId" element={<ItemListContainer />} /> 
+   <Route path="/item/:id" element={<ItemDetailContainer />} />
+  <Route path='/Cart' element={<Cart />} />
 
-        
-      </Routes>
+
+  
+</Routes>
+    </CartProvider>
+
 
       <Footer />
     </BrowserRouter>

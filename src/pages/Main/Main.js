@@ -32,7 +32,7 @@ const Main = () => {
             </div>
 
             <div className='contieneImg'>
-            <img className='container-img' src = "./img/fondo-1-02.png" alt="foto" />
+            <img className='container-img' src = "./img/luna-bn-04.png" alt="foto" />
             </div>
         </div>
 

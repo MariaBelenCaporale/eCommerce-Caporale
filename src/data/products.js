@@ -6,7 +6,7 @@ export const products = [
         detail: "Animate a conocer a El Príncipe Marciano, hijo del Rey Marciano II, conquistador de Saturno.",
         price: "150 USD",
         duration: "30 min",
-        stock: 10,
+        stock: 5,
         category: "EXCURSIONES",
         image: '/img/principe-marciano.png'
     },
@@ -17,7 +17,7 @@ export const products = [
         detail: "Animate a caminar en la Luna, pero siempre con cuidado, o puede que te quedes por ahi :)",
         price: "100 USD",
         duration: "10 min",
-        stock: "10",
+        stock: 10,
         category: "EXCURSIONES",
         image: '/img/caminata-espacial.png'
     },
@@ -50,7 +50,7 @@ export const products = [
         detail: "Los hijos de nuestros Ingenieros han creado la Nave Child. Hecha completamente de papel reciclado, súper ecológica",
         price: "120 USD",
         duration: "30 min",
-        stock: 10,
+        stock: 5,
         category: "EXCURSIONES",
         image: '/img/nave.png'
     },

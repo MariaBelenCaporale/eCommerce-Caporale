@@ -1,6 +1,16 @@
 
+.section-experiencias {
+    height: auto;
+}
+
+.tituloExp {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40vh;
+    margin-top: 10rem;
+}
 .expePadre {
-    height: 75vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -42,7 +52,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 14%;
+    margin-top: 12rem;
     font-size: 1rem;
 }
 
@@ -55,13 +65,18 @@
     justify-content: center;
     flex-direction: column;
     position: absolute;
-    margin-top: 35%;
+    margin-top: 50%;
 }
 
 .astro {
-    width: 15%;
+    width: 25%;
 }
 
+.itemContenido {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 @keyframes astro {
     from {
