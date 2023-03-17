@@ -115,7 +115,9 @@ background-color:#f9c900;
     background-color: antiquewhite;
 }
 
-
+.Toastify__zoom-enter {
+    display: none !important;
+}
 
 
 .Toastify__progress-bar--success {

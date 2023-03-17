@@ -1,4 +1,119 @@
 
+.sectio{
+    background: #403bef;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    justify-content: center;
+    height: auto;
+    gap: 3rem;
+    width: auto;
+    margin: 5%;
+    box-shadow: 0 0 30px 0 #403bef;
+    position: relative;
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
+.tituloExpMain {
+    margin-top: 4rem;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    height: 40vh;
+    width: 100%;
+    flex-direction: column;
+    margin-left: 5%;
+}
+
+.expePadreMain {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    flex-direction: row;
+}
+
+.astronautaMain {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.astroMain {
+    width: 70%;
+}
+
+.adquiriHijoMain {
+    font-size: 3rem;
+    align-items: center;
+    justify-content: flex-start;
+    display: flex;
+    color: white;
+    width: 20%;
+    font-family: 'Montserrat';
+    line-height: 1.4;
+}
+
+.adquiriTextoMain {
+    width: auto;
+    color: white;
+    font-family: 'Montserrat';
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
+    font-size: 1rem;
+}
+
+.quienesBotonMain {
+    margin-top: 30px;
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 1rem;
+    background-color: #f9c900;
+    border: none;
+    height: 5vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    width: 50%;
+    color: black;
+    text-decoration: none;
+}
+
+.quienesBotonMain:hover {
+    background-color: white;
+}
+
+
+@keyframes astroMain {
+    from {
+    transform: translateY(-40px);
+    }
+
+    to {
+    transform: translateY(40px);
+    }
+} 
+
+.astroMain {
+    transition: ease-in;
+    animation-duration: 10s;
+    animation-name: astroMain;
+    animation-iteration-count: infinite;
+    animation-direction:alternate;
+}
+
+
+
+
+
+
+
+
 .bienvenida {
     background-color: white;
     height: 10vh;
@@ -6,7 +121,6 @@
 
 .container-inicio {
     align-items: center;
-    /* position: relative; */
     display: flex;
     justify-content: center;
     background-image: url(/public/img/luna-bn-04.png);

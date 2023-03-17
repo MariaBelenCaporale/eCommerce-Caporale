@@ -3,6 +3,7 @@
     width: 100%;
     display: flex;
     align-items: center;
+    height: 50vh;
 }
 
 .marciano:hover {
@@ -11,18 +12,19 @@
 
 .marciano-pic {
     width: 70%;
+    padding: 20px;
 }
 
 .marciano-info {
     display: flex;
-    width: auto;
+    width: 100%;
     color: white;
     height: auto;
     padding: 10px;
 }
 
 .data-marciano {
-    width: 50%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;

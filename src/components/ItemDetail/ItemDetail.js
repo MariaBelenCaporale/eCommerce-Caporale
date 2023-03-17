@@ -15,7 +15,7 @@ const ejecutar = () => {
 
 
 const mensaje = () => {
-    toast.success('Producto agregado!', {
+    toast.success('Experiencia agregada!', {
         position: "top-right",
         autoClose: 2000,
         hideProgressBar: false,

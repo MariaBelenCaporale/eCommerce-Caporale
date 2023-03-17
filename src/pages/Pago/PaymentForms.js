@@ -30,6 +30,7 @@ const PaymentForms = () => {
         })
     }
 
+
     const processPayment = () => {
         swal({
             title: 'Tu compra a sido realizada',
@@ -37,6 +38,7 @@ const PaymentForms = () => {
         })
         
     }; 
+
     
     return (
         <div className='card'>
@@ -120,7 +122,7 @@ const PaymentForms = () => {
                     </div>
                 
 
-                <button onClick={processPayment} type="submit" className='botonCart sigue-comprando compra'>
+                <button onClick= {processPayment} type="button" className='botonCart sigue-comprando compra'>
                     
                 
                     Comprar 

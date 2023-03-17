@@ -6,29 +6,23 @@ import { Link } from 'react-router-dom';
 
 
 
-
-
-
 const Main = () => {
     const [item, setItem] = useState([])
 
     const url = window.location.href
-
-
-
-
 
     return (
         <div>
             {url === '/Main' && <div> ENCABEZADO</div>}
         <div>
 
+
         <div className='container-inicio'>
             <div className='containerTitulo'>
-                <div>
-                    <img className='planeta' src='./img/planeta-03.png' />
-                </div>
-            <h1 className='tituloWeb'><span className='span'>VIVÍ TU EXPERIENCIA GALÁCTICA</span></h1>
+                    <div>
+                        <img className='planeta' src='./img/planeta-03.png' />
+                    </div>
+                <h1 className='tituloWeb'><span className='span'>VIVÍ TU EXPERIENCIA GALÁCTICA</span></h1>
             </div>
 
             <div className='contieneImg'>
@@ -36,14 +30,32 @@ const Main = () => {
             </div>
         </div>
 
-            <div className='adquiriPadre'>
-                <h2 className='adquiriHijo'> <span className='spanAdquiri'>ADQUIRÍ TUS EXPERIENCIAS </span></h2>
-                <p className='adquiriTexto'>TODAS LAS EXPERIENCIAS INCLUYEN TRASLADO DE IDA Y VUELTA</p>
-            </div>
 
-        
+
+  <section className='sectio'>
+            
+            <div className='expePadreMain'>
+
+                <div className='tituloExpMain'>
+
+
+            {/* <div className='adquiriPadre'> */}
+                <h2 className='adquiriHijoMain'> <span className='spanAdquiri'>ADQUIRÍ TUS EXPERIENCIAS </span></h2>
+                <p className='adquiriTextoMain'>TODAS INCLUYEN TRASLADO DE IDA Y VUELTA</p>
+
+                <Link to={"/Experiencias"} className='quienesBotonMain'>EXPERIENCIAS
+                </Link>
+            </div>
+                    <div astronautaMain>
+                        <img className='astroMain' src='./img/astronauta-04.png' />
+                    </div>
+            </div>
+            </section>
+
+{/*         
             {item.map((item) => <div>{item} </div>)}
-            <ItemListContainer />
+            <ItemListContainer /> */}
+            
 
 
 <section className='section-quienes'>

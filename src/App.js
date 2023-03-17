@@ -10,7 +10,6 @@ import Experiencias from './pages/Experiencias/Experiencias';
 import Cart from './pages/Cart/Cart';
 import CartProvider from './Context/CartProvider';
 
-import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 function App() {
   return (
@@ -24,8 +23,8 @@ function App() {
   <Route path="/" element={<Main />} />
   <Route path="/Experiencias" element={<Experiencias />} />
   <Route path="/nosotros" element={<Nosotros />} />
-   <Route path="/category/:categoryId" element={<ItemListContainer />} /> 
-   <Route path="/item/:id" element={<ItemDetailContainer />} />
+  <Route path="/category/:categoryId" element={<ItemListContainer />} /> 
+  <Route path="/item/:id" element={<ItemDetailContainer />} />
   <Route path='/Cart' element={<Cart />} />
 
 
