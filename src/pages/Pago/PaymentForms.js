@@ -5,7 +5,10 @@ import './PaymentForms.css';
 import swal from 'sweetalert';
 
 
+
+
 const PaymentForms = () => {
+      
 
     const [state, setState] = useState({
         number: "",
@@ -18,6 +21,7 @@ const PaymentForms = () => {
 
     const handleInputChange = (e) => {
         setState({
+            
             ...state,
             [e.target.name] : e.target.value
         });
@@ -57,20 +61,20 @@ const PaymentForms = () => {
 
                     <div className='form-group'>
                         <label className='labelTar' htmlFor='number'>Número de tajerta</label>
-                        <input className='inputTar'
-                            type="text"
+                        <input value={state.number} className='inputTar'
+                            type="required"
                             name="number"
                             id="number"
                             placeholder='1234 1234 1234 1234'
                             maxLength="16"
-
+                            
                             onChange={handleInputChange}
                             onFocus={handleFocusChange}
                         />
                     </div>
                     <div className='form-group'>
                         <label className='labelTar' htmlFor='name'>Nombre y apellido</label>
-                        <input className='inputTar'
+                        <input value={state.name} className='inputTar'
                             type="text"
                             name="name"
                             id="name"
@@ -84,7 +88,7 @@ const PaymentForms = () => {
                 
                     <div className='form-group'>
                         <label className='labelTar' htmlFor='expiry'>Fecha de expiración</label>
-                        <input className='inputTar'
+                        <input value={state.expiry} className='inputTar'
                             type="text"
                             name="expiry"
                             id="expiry"
@@ -97,7 +101,7 @@ const PaymentForms = () => {
 
                     <div className='form-group'>
                         <label className='labelTar' htmlFor='cvc'>CVC</label>
-                        <input className='inputTar'
+                        <input value={state.cvc} className='inputTar' 
                             type="text"
                             name="cvc"
                             id="cvc"
@@ -110,16 +114,19 @@ const PaymentForms = () => {
 
                     <div className='form-group'>
                         <label className='labelTar' htmlFor='email'>Email</label>
-                        <input className='inputTar'
-                            type="email"
+                        <input value={state.email} className='inputTar'
+                            type="pattern"
                             name="email"
                             id="email"
                             placeholder='ejemplo@ejemplo.com'
                             maxLength="30"
                             onChange={handleInputChange}
                             onFocus={handleFocusChange}
+             
+                        
                         />
                     </div>
+                
                 
 
                 <button onClick= {processPayment} type="button" className='botonCart sigue-comprando compra'>
