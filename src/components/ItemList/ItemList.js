@@ -3,18 +3,16 @@ import Item from "../Item/Item";
 import './ItemList.css';
 
 
-const ItemList = ({productList}) => {
-
+const ItemList = ({ productList }) => {
 
     return (
         <div className="itemList">
             {productList.map((product) => (
-                    <div key={product.id}>
-                        <Link className="linkUno" to={`/item/${product.id}`}>
-                            <Item product={product} />
-                        </Link>
-                    </div>
-
+                <div key={product.id}>
+                    <Link className="linkUno" to={`/item/${product.id}`}>
+                        <Item product={product} />
+                    </Link>
+                </div>
                 ))
             }
         </div>

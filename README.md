@@ -1,6 +1,6 @@
 # Ecommerce Galáctica
 
-![](./galactica.gif) {width= '100px'}
+![](./galactica.gif) 
 
 
 

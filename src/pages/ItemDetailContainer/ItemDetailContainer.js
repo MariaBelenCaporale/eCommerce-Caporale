@@ -1,13 +1,11 @@
 
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import { products } from "../../data/products";
 import ItemDetail from "../../components/ItemDetail/ItemDetail";
-import './ItemDetailContainer.css';
 import { getFirestore, doc, getDoc } from "firebase/firestore";
 
 const ItemDetailContainer = () => {
-    const { id } = useParams(); 
+    const { id } = useParams();
     const [detailObject, setDetailObject] = useState({});
 
 
@@ -16,12 +14,12 @@ const ItemDetailContainer = () => {
         const querySnapshot = doc(db, 'products', id);
 
         getDoc(querySnapshot)
-        .then((res) => {
-            setDetailObject({
-                id: res.id, ...res.data()
+            .then((res) => {
+                setDetailObject({
+                    id: res.id, ...res.data()
+                })
             })
-        })
-        .catch((error) => console.log(error))
+            .catch((error) => console.log(error))
     }
 
     useEffect(() => {
@@ -31,7 +29,7 @@ const ItemDetailContainer = () => {
     return <div>
         <ItemDetail detail={detailObject} />
     </div>;
-    
+
 }
 
 export default ItemDetailContainer;

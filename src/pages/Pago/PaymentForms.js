@@ -122,18 +122,13 @@ const PaymentForms = () => {
                             maxLength="30"
                             onChange={handleInputChange}
                             onFocus={handleFocusChange}
-             
-                        
                         />
                     </div>
                 
                 
 
                 <button onClick= {processPayment} type="button" className='botonCart sigue-comprando compra'>
-                    
-                
                     Comprar 
-        
                 </button>
                 
 

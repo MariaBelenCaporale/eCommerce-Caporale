@@ -1,23 +1,22 @@
-import Cart from "../pages/Cart/Cart";
 import { CartContext } from "./CartContext";
 import { useState, useEffect } from "react";
 
 
-const CartProvider = ({children}) => {
+const CartProvider = ({ children }) => {
     const [cart, setCart] = useState([]);
-    const [total, setTotal ] = useState (0);
+    const [total, setTotal] = useState(0);
 
     useEffect(() => {
-        setTotal(cart.reduce((acc, curr) => acc + curr.price * curr.quantity , 0))
+        setTotal(cart.reduce((acc, curr) => acc + curr.price * curr.quantity, 0))
     }, [cart]);
 
     const addItem = (item, quantity) => {
         isInCart(item.id);
 
-        if(isInCart(item.id)) {
+        if (isInCart(item.id)) {
             const newCart = cart.map((product) => {
-                if (product.id === item.id){
-                    product.quantity= product.quantity + quantity;
+                if (product.id === item.id) {
+                    product.quantity = product.quantity + quantity;
                     return product
                 } else {
                     return product
@@ -30,7 +29,7 @@ const CartProvider = ({children}) => {
                 name: item.name,
                 quantity: quantity,
                 description: item.description,
-                detail: item.detail ,
+                detail: item.detail,
                 price: item.price,
                 duration: item.duration,
                 stock: item.stock,
@@ -39,9 +38,9 @@ const CartProvider = ({children}) => {
             };
             setCart([...cart, product]);
         }
-        };
+    };
 
-       
+
 
     const clear = () => {
         setCart([]);
@@ -52,9 +51,9 @@ const CartProvider = ({children}) => {
     };
 
     const isInCart = (productId) => {
-        if(cart.find((product) => product.id === productId)){
+        if (cart.find((product) => product.id === productId)) {
             return true;
-        }else {
+        } else {
             return false;
         }
     };
@@ -74,7 +73,7 @@ const CartProvider = ({children}) => {
     };
 
     return (
-        <CartContext.Provider value={{cart, addItem, clear, removeItem, total, setCart, updateItem }}>{children}</CartContext.Provider>
+        <CartContext.Provider value={{ cart, addItem, clear, removeItem, total, setCart, updateItem }}>{children}</CartContext.Provider>
     )
 };
 

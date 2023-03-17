@@ -1,6 +1,6 @@
 import './ItemCount.css';
 
-const ItemCount = ({count, setCount}) => {
+const ItemCount = ({ count, setCount }) => {
 
     const onAdd = () => {
         setCount(count + 1);
@@ -16,10 +16,10 @@ const ItemCount = ({count, setCount}) => {
         <div className='counter'>
             <div className='controllers'>
                 <button className='masMenos' disabled={count === 0} onClick={restar}>-</button>
-            <div>
-                <span className='spanCount'>{count}</span>
-            </div>
-            <button className='masMenos' disabled={count === 0}  onClick={onAdd}>+</button>
+                <div>
+                    <span className='spanCount'>{count}</span>
+                </div>
+                <button className='masMenos' disabled={count === 0} onClick={onAdd}>+</button>
             </div>
         </div>
     );

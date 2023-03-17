@@ -8,23 +8,21 @@ const Footer = () => {
         <div className="footer">
             <div className="container-footer">
                 <div className="container-list">
-                 <NavLink to={"/"}>
-                    <img src = {logo} className = "logo-footer" />
-                </NavLink>
+                    <NavLink to={"/"}>
+                        <img src={logo} className="logo-footer" />
+                    </NavLink>
                     <ul className="list">
                         <li>
                             María Belén Caporale
                         </li>
                         <li>
-                        <Link className="enlaces-cuentas" to={"https://github.com/MariaBelenCaporale"}>GitHub</Link>
+                            <Link className="enlaces-cuentas" to={"https://github.com/MariaBelenCaporale"}>GitHub</Link>
                         </li>
                         <li>
-                        <Link className="enlaces-cuentas" to={"https://www.linkedin.com/in/mariabelencaporale/"}>LinkedIn</Link>
+                            <Link className="enlaces-cuentas" to={"https://www.linkedin.com/in/mariabelencaporale/"}>LinkedIn</Link>
                         </li>
                     </ul>
-
                 </div>
-    
             </div>
         </div>
 
