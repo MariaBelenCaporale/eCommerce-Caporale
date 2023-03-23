@@ -1,7 +1,7 @@
 .padreCarrito {
     display: flex;
     align-items: center;
-    justify-content:space-between;
+    justify-content: space-between;
     padding-right: 2rem;
 }
 
@@ -18,6 +18,10 @@
     height: 30px;
 }
 
+.padreImgCarrito:hover {
+    filter: invert(32%) sepia(93%) saturate(7500%) hue-rotate(328deg) brightness(100%) contrast(98%);
+}
+
 .carritoTotal {
     color: white;
     padding-right: 1rem;
@@ -28,3 +32,4 @@
     text-decoration: none;
     font-family: 'Montserrat';
 }
+
