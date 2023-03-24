@@ -1,7 +1,7 @@
 import './Main.css';
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
-
+import { set } from 'react-hook-form';
 
 
 
@@ -31,22 +31,22 @@ const Main = () => {
 
 
 
-                <section className='sectio'>
 
+                <section className='sectio'>
                     <div className='expePadreMain'>
                         <div className='tituloExpMain'>
                             <h2 className='adquiriHijoMain'> <span className='spanAdquiri'>ADQUIRÍ TUS EXPERIENCIAS </span></h2>
                             <p className='adquiriTextoMain'>TODAS INCLUYEN TRASLADO DE IDA Y VUELTA</p>
                             <Link to={"/Experiencias"} className='quienesBotonMain'>EXPERIENCIAS</Link>
                         </div>
-
                         <div astronautaMain>
                             <img className='astroMain' src='./img/astronauta-04.png' />
                         </div>
-
                     </div>
                 </section>
 
+                
+                     
 
                 <section className='section-quienes'>
                     <h2 className='quienesHijo'> <span className='spanQuienes'>GALÁCTICA </span></h2>

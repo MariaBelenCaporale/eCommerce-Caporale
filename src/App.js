@@ -10,36 +10,33 @@ import Experiencias from './pages/Experiencias/Experiencias';
 import Cart from './pages/Cart/Cart';
 import CartProvider from './Context/CartProvider';
 import 'react-toastify/dist/ReactToastify.css';
+import Loader from './components/Loader/Loader';
 
 
 function App() {
+
   return (
+ 
+<BrowserRouter>
 
-    <BrowserRouter>
-      <CartProvider>
+<Loader />
+       <CartProvider>
         <NavBar />
-
         <Routes>
-
           <Route path="/" element={<Main />} />
           <Route path="/Experiencias" element={<Experiencias />} />
           <Route path="/nosotros" element={<Nosotros />} />
           <Route path="/category/:categoryId" element={<ItemListContainer />} />
           <Route path="/item/:id" element={<ItemDetailContainer />} />
           <Route path='/Cart' element={<Cart />} />
-
-
-
         </Routes>
       </CartProvider>
-
-
       <Footer />
     </BrowserRouter>
-
-
+ 
+    
   );
-}
+};
 
 export default App;
 
