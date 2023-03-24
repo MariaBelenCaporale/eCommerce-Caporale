@@ -33,7 +33,7 @@ const Loader = () => {
             <FontAwesomeIcon className='fa-rocket' icon={faRocket} />
 
             
-            <h3 className='loading'>Loading...</h3>
+            <h3 className='loading'>Cargando Experiencias</h3>
             </div>
             
             <span><i></i></span>
