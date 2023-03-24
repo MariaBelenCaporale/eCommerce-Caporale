@@ -1,6 +1,11 @@
 import React from 'react'
 import { useState, useEffect } from 'react';
 import './Loader.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import '@fortawesome/free-solid-svg-icons';
+import {faRocket, faCloud} from '@fortawesome/free-solid-svg-icons';
+
+
 
 const Loader = () => {
     const [loading, setLoading] = useState(false);
@@ -10,7 +15,7 @@ const Loader = () => {
     
       const timeout = setTimeout(() => {
         setLoading(false);
-      }, 3000);
+      }, 4000);
     
       return () => {
         clearTimeout(timeout);
@@ -23,14 +28,22 @@ const Loader = () => {
     
     if (loading) {
       return (
-        <div className='load'>
-            <h1 className='titulos'>
-            HOLA DELFI, ACA SOLO DEBERÍAS VER EN AMARILLO EL FONDO, Y DESPUES CARGA OK
-            </h1>
-          
+        <div className='loader'>
+            <div className='rocket'>
+            <FontAwesomeIcon className='fa-rocket' icon={faRocket} />
+
+            
+            <h3 className='loading'>Loading...</h3>
+            </div>
+            
+            <span><i></i></span>
         </div>
+          
       );
     }
-}
+  
+    }
+  
+
 
 export default Loader;

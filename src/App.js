@@ -13,13 +13,18 @@ import 'react-toastify/dist/ReactToastify.css';
 import Loader from './components/Loader/Loader';
 
 
+
+
 function App() {
 
+
   return (
+
  
 <BrowserRouter>
 
 <Loader />
+
        <CartProvider>
         <NavBar />
         <Routes>
@@ -32,9 +37,7 @@ function App() {
         </Routes>
       </CartProvider>
       <Footer />
-    </BrowserRouter>
- 
-    
+    </BrowserRouter>    
   );
 };
 
