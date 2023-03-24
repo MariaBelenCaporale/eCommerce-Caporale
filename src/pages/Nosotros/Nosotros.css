@@ -20,13 +20,13 @@
 
 .span-Quienes {
     border: 2px solid white;
-    width: 100%;
+    width: auto;
     display: flex;
     align-items: end;
     justify-content: center;
     height: 7vh;
     padding-top: 10px;
-    padding-right: 10px;
+    padding-right: 0px;
     padding-left: 10px;
     padding-bottom: 5px;
 }
