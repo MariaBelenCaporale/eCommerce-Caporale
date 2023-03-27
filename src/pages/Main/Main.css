@@ -366,3 +366,11 @@
 }
 
 
+@media screen and (min-width: 320px) and (max-width: 480px) {
+    
+    .container-inicio {
+        width: 100%;
+        height: 100vh;
+        background-position: bottom;
+    }
+}

@@ -14,7 +14,7 @@ const NavBar = () => {
             </NavLink>
 
             <div>
-                <ul className='lista'>
+                <ul className='lista active'>
                     <li>
                         <NavLink
                             className={({ isActive }) => (isActive ? 'active' : 'inactive')}
@@ -41,9 +41,10 @@ const NavBar = () => {
                 </ul>
             </div>
 
-            <div>
+            <div className='carro'>
                 <CartWidget />
             </div>
+            
         </div>
     )
 };

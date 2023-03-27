@@ -16,16 +16,10 @@ import Loader from './components/Loader/Loader';
 
 
 function App() {
-
-
   return (
-
- 
-<BrowserRouter>
-
-<Loader />
-
-       <CartProvider>
+    <BrowserRouter>
+      <Loader />
+      <CartProvider>
         <NavBar />
         <Routes>
           <Route path="/" element={<Main />} />

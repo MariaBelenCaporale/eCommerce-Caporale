@@ -46,3 +46,36 @@
 .inactive {
     color: white;
 }
+
+
+/* RESPONSIVE */
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+
+    .lista {
+        display: none;
+    }
+
+    .container-logo {
+        width: 40%;
+    }
+
+    .carro {
+        display: none;
+    }
+
+    .navbar {
+        justify-content: flex-start;
+    }
+
+    .containerTitulo {
+        width: 80%;
+    }
+
+    .tituloWeb {
+        font-size: 2rem;
+    }
+}
+
+
+
