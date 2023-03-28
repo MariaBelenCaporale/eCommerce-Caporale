@@ -93,12 +93,16 @@
     }
 
     .tituloExp {
-        margin-top: 7rem;
+        margin-top: 8rem;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
     .expeTexto {
         width: 80%;
-        margin-top: 9rem;
+        margin-top: 8rem;
     }
 
     .astro-padre {
