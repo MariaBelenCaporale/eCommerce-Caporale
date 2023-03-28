@@ -32,7 +32,6 @@
     font-family: 'Montserrat';
     font-size: 3rem;
     width: 50%;
-    line-height: 4rem;
 }
 
 .orden-section {
@@ -117,7 +116,7 @@
 
     .quienes-Somos {
         font-size: 2rem;
-        width: auto;
+        width: 80%;
     }
 
     .span-Quienes {
@@ -143,8 +142,7 @@
 
     .quienes-Somos {
         font-size: 2rem;
-        width: auto;
-        line-height: 2.8rem;
+        width: 80%;
     }
 
     .span-Quienes {

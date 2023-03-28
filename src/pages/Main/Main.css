@@ -342,7 +342,7 @@
     }
 
     .tituloWeb {
-        margin-right: 60px;
+        justify-content: center;
     }
 
     .planetita {
@@ -352,11 +352,15 @@
         margin-left: 60px;
     }
 
+    .planeta {
+        width: 35%;
+    }
+
     .containerTitulo {
         width: 100%;
         display: flex;
         align-items: center;
-        justify-content: flex-end;
+        justify-content: center;
     }
 
     .expePadreMain {
@@ -406,6 +410,7 @@
 
     .adquiriHijoMain {
         justify-content: center;
+        font-size: 3rem;
     }
 
     .spanAdquiri {
@@ -417,14 +422,30 @@
     }
 
     .orden {
-        padding-left: 30px;
         gap: 2rem;
         padding-top: 0px;
         display: flex;
-        align-items: flex-start;
+        align-items: center;
         padding-bottom: 30px;
-        padding-right: 0;
+        justify-content: center;
+    }
 
+    .ovni-padre {
+        display: none !important;
+    }
+
+    .container-img {
+        display: none;
+    }
+
+    .quienesSomos {
+        font-size: 3rem;
+        text-align: center;
+    }
+
+    .quienesTexto {
+        width: 100%;
+        text-align: center;
     }
 } 
 
