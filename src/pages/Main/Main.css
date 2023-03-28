@@ -423,8 +423,10 @@
     }
 
     .spanAdquiri {
-        padding: 2px;
-        
+        padding-top: 2px;
+        padding-bottom: 2px;
+        padding-right: 9px;
+        padding-left: 9px;
     }
 
     .sectio {
