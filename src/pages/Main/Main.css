@@ -428,7 +428,7 @@
     }
 } 
 
-/* @media screen and (min-width: 400px) and (max-width: 480px) {
+@media screen and (min-width: 400px) and (max-width: 480px) {
     
     .container-inicio {
         width: 100%;
@@ -516,9 +516,8 @@
     }
 
     .tituloWeb {
-        font-size: 3rem;
+        font-size: 4rem;
         justify-content: center;
-        line-height: 1.5;
     }
 
     .tituloExpMain {
@@ -532,9 +531,8 @@
     }
 
     .adquiriHijoMain {
-        font-size: 2rem;
+        font-size: 3rem;
         justify-content: center;
-        line-height: 1.7;
     }
 
     .astroMain {
@@ -570,7 +568,7 @@
 
     .quienesSomos {
         align-items: center;
-        font-size: 1.6rem;
+        font-size: 3rem;
         justify-content: center;
         display: flex;
         text-align: center;
@@ -581,9 +579,9 @@
     }
 
 
-} */
+}
 
-@media screen and (min-width: 320px) and (max-width: 480px) {
+@media screen and (min-width: 320px) and (max-width: 399px) {
     
     .container-inicio {
         width: 100%;
@@ -622,7 +620,7 @@
         animation-iteration-count: infinite;
         animation-direction:alternate;
     }
-
+    
     .astroMain {
         width: 70%;
         padding-top: 10px;
