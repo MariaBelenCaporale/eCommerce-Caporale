@@ -29,20 +29,8 @@
     width: 20%;
     position: absolute;
     font-family: 'Montserrat';
-    line-height: 1.4;
 }
 
-.spanExpe {
-    border: 2px solid white;
-    width: auto;
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
-    height: 7vh;
-    padding-top: 10px;
-    padding-right: 10px;
-    padding-left: 10px;
-}
 
 .expeTexto {
     width: auto;
@@ -55,8 +43,6 @@
     margin-top: 12rem;
     font-size: 1rem;
 }
-
-
 
 .astro-padre {
     width: 100%;
@@ -97,3 +83,30 @@
 }
 
 
+@media screen and (min-width: 320px) and (max-width: 399px) {
+
+    .expeHijo {
+        font-size: 2rem;
+        margin-top: 0;
+        margin-left: 60px;
+        justify-content: flex-start;
+        width: 100%;
+    }
+
+    .tituloExp {
+        margin-top: 8rem;
+    }
+
+    .expeTexto {
+        width: 80%;
+        margin-top: 8rem;
+    }
+
+    .astro-padre {
+        margin-top: 138%;
+    }
+
+    .astro {
+        width: 35%;
+    }
+}

@@ -8,7 +8,7 @@ const Experiencias = () => {
             <div className='expePadre'>
 
                 <div className='tituloExp'>
-                <h2 className='expeHijo'> <span className='spanExpe'>ADQUIRÍ TUS EXPERIENCIAS </span></h2>
+                <h2 className='expeHijo'> ADQUIRÍ TUS EXPERIENCIAS </h2>
                 <p className='expeTexto'>TODAS INCLUYEN TRASLADO DE IDA Y VUELTA</p>
                 </div>
                 <div className='astro-padre'>
