@@ -45,7 +45,7 @@ const NavBar = () => {
                         <NavLink onClick={handleClick}
                             className={({ isActive }) => (isActive ? 'active' : 'inactive')}
                             to="/nosotros">
-                            NOSOTR@S
+                            CONOCENOS
                         </NavLink>
                     </li>
 
