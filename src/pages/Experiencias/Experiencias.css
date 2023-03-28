@@ -88,9 +88,8 @@
     .expeHijo {
         font-size: 2rem;
         margin-top: 0;
-        margin-left: 60px;
-        justify-content: flex-start;
-        width: 100%;
+        justify-content: center;
+        width: 80%;
     }
 
     .tituloExp {
