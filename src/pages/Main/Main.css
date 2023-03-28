@@ -403,7 +403,7 @@
 
 }
 
-@media screen and (min-width: 320px) and (max-width: 480px) {
+@media screen and (min-width: 400px) and (max-width: 480px) {
     
     .container-inicio {
         width: 100%;
@@ -419,7 +419,7 @@
 
     .span {
         padding-top: 10px;
-        padding-bottom: 8px;
+        padding-bottom: 9px;
         height: 6vh;
         padding-left: 3px;
         padding-right: 3px;
@@ -465,6 +465,128 @@
 
     .tituloWeb {
         font-size: 3rem;
+        justify-content: center;
+        line-height: 1.5;
+    }
+
+    .tituloExpMain {
+        margin-left: 0;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .adquiriHijoMain {
+        font-size: 2rem;
+        justify-content: center;
+        line-height: 1.7;
+    }
+
+    .astroMain {
+        display: none;
+    }
+
+    .adquiriTextoMain {
+        width: 87%;
+    }
+
+    .quienesHijo {
+        font-size: 2rem;
+    }
+
+    .quienesPadre {
+        height: auto;
+    }
+
+    .ovni-padre img {
+        display: none;
+    }
+
+    .ovni-padre {
+        display: none !important;
+    }
+
+    .orden {
+        padding-right: 17px;
+        padding-left: 17px;
+        gap: 2rem;
+        padding-top: 40px;
+    }
+
+    .quienesSomos {
+        align-items: center;
+        font-size: 1.6rem;
+        justify-content: flex-start;
+        display: flex;
+    }
+
+
+}
+
+@media screen and (min-width: 320px) and (max-width: 399px) {
+    
+    .container-inicio {
+        width: 100%;
+        height: 100vh;
+        background-position: bottom;
+    }
+
+    .expePadreMain {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .span {
+        padding-top: 3px;
+        padding-bottom: 2px;
+        height: 6vh;
+        padding-left: 3px;
+        padding-right: 3px;
+    }
+
+    .spanAdquiri {
+        padding-top: 2px;
+        padding-bottom: 2px;
+        padding-right: 9px;
+        padding-left: 9px;
+    }
+
+    .sectio {
+        margin-top: 20% !important;
+        margin-bottom: 20% !important;
+    }
+
+    .quienesHijo {
+        align-items: center;
+        justify-content: center;
+    }
+
+    .orden {
+        padding-left: 57px;
+        padding-top: 100px;
+        padding-right: 10px;
+        padding-bottom: 100px;
+    }
+
+    .containerTitulo {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .planeta {
+        width: 50%;
+        margin-left: 10px;
+    }
+
+    .container-img {
+        display: none;
+    }
+
+    .tituloWeb {
+        font-size: 2rem;
         justify-content: center;
         line-height: 1.5;
     }
