@@ -449,7 +449,6 @@
     }
 
     .tituloExpMain {
-        height: 30vh;
         margin-left: 0;
         justify-content: center;
         align-items: center;
@@ -495,7 +494,7 @@
     .quienesSomos {
         align-items: center;
         font-size: 1.6rem;
-        justify-content: center;
+        justify-content: flex-start;
         display: flex;
     }
 
