@@ -425,6 +425,24 @@
         width: 100%;
     }
 
+    @keyframes astroMain {
+        from {
+        transform: translatex(-10px);
+        }
+    
+        to {
+        transform: translatex(10px);
+        }
+    } 
+    
+    .astroMain {
+        transition: ease-in;
+        animation-duration: 5s;
+        animation-name: astroMain;
+        animation-iteration-count: infinite;
+        animation-direction:alternate;
+    }
+
     .span {
         padding-top: 10px;
         padding-bottom: 9px;
@@ -485,6 +503,7 @@
         display: flex;
         width: 100%;
         flex-direction: column;
+        margin-top: 1.5rem;
     }
 
     .adquiriHijoMain {
@@ -495,6 +514,7 @@
 
     .astroMain {
         width: 70%;
+        padding-top: 10px;
     }
 
     .adquiriTextoMain {
@@ -550,7 +570,38 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        flex-direction: column-reverse;
     }
+
+    .astronautaMain {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    @keyframes astroMain {
+        from {
+        transform: translatex(-10px);
+        }
+    
+        to {
+        transform: translatex(10px);
+        }
+    } 
+    
+    .astroMain {
+        transition: ease-in;
+        animation-duration: 5s;
+        animation-name: astroMain;
+        animation-iteration-count: infinite;
+        animation-direction:alternate;
+    }
+    .astroMain {
+        width: 70%;
+        padding-top: 10px;
+    }
+
 
     .span {
         padding-top: 3px;
@@ -617,16 +668,13 @@
         display: flex;
         width: 100%;
         flex-direction: column;
+        margin-top: 1rem;
     }
 
     .adquiriHijoMain {
         font-size: 2rem;
         justify-content: center;
         line-height: 1.7;
-    }
-
-    .astroMain {
-        display: none;
     }
 
     .adquiriTextoMain {
