@@ -109,6 +109,33 @@
 }
 
 
+@media screen and (min-width: 400px) and (max-width: 480px) {
+    .quienes-Padre {
+        height: auto;
+    }
+
+    .ovni-padre {
+        display: none;
+    }
+
+    .quienes-Somos {
+        font-size: 2rem;
+        width: auto;
+        line-height: 2.8rem;
+    }
+
+    .span-Quienes {
+        height: 6vh;
+        padding-right: 10px;
+        width: 65%;
+    }
+
+    .orden-section {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
 @media screen and (min-width: 320px) and (max-width: 399px) {
     .quienes-Padre {
         height: auto;
