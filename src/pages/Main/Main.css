@@ -411,6 +411,16 @@
         background-position: bottom;
     }
 
+    .span {
+        padding: 4px;
+        height: 6vh;
+    }
+
+    .spanAdquiri {
+        padding: 2px;
+        
+    }
+
     .sectio {
         margin-top: 20% !important;
         margin-bottom: 20% !important;
@@ -445,18 +455,22 @@
     .tituloWeb {
         font-size: 2rem;
         justify-content: center;
-        line-height: 1.6;
+        line-height: 1.5;
     }
 
     .tituloExpMain {
         margin-left: 0;
         justify-content: center;
-        align-items: center;
+        align-items: flex-start;
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        margin-left: 50px;
     }
 
     .adquiriHijoMain {
         font-size: 2rem;
-        justify-content: center;
+        justify-content: flex-start;
         line-height: 1.7;
     }
 
