@@ -84,6 +84,11 @@
     .data-marciano {
         padding: 0px 10px 10px 10px;
     }
+
+    .botonCompra {
+        color: black;
+        font-family: 'Montserrat';
+    }
 }
 
 @media screen and (min-width: 320px) and (max-width: 399px) {
