@@ -322,6 +322,10 @@
         padding-top: 19px;
     }
 
+    .section-quienes {
+        margin-bottom: 3rem;
+    }
+
     .quienesHijo {
         justify-content: center;
     }
@@ -330,8 +334,20 @@
         height: 100vh;
     }
 
+    .tituloExpMain {
+        height: 70vh;
+    }
+
     .orden {
-        padding-top: 30px;
+        padding: 50px;
+    }
+
+    .quienesTexto {
+        width: 100%;
+    }
+
+    .ovni-img {
+        width: 80%;
     }
 }
 
@@ -441,6 +457,7 @@
     .quienesSomos {
         font-size: 3rem;
         text-align: center;
+        width: 50%;
     }
 
     .quienesTexto {
