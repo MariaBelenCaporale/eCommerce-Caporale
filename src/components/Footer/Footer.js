@@ -9,11 +9,13 @@ const Footer = () => {
             <div className="container-footer">
                 <div className="container-list">
                     <NavLink to={"/"}>
+                        <div className="imgFooter">
                         <img src={logo} className="logo-footer" />
+                        </div>
                     </NavLink>
                     <ul className="list">
                         <li>
-                            María Belén Caporale
+                            <p>María Belén Caporale</p>
                         </li>
                         <li>
                             <Link className="enlaces-cuentas" to={"https://github.com/MariaBelenCaporale"}>GitHub</Link>

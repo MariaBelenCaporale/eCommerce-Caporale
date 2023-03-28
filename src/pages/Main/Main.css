@@ -107,13 +107,6 @@
     animation-direction:alternate;
 }
 
-
-
-
-
-
-
-
 .bienvenida {
     background-color: white;
     height: 10vh;
@@ -137,7 +130,7 @@
 }
 
 .tituloWeb {
-    font-size: 3rem;
+    font-size: 4rem;
     align-items: center;
     justify-content: flex-end;
     display: flex;
@@ -155,7 +148,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 7vh;
+    height: 8vh;
     padding: 4px;
     padding-right: 7px;
 }
@@ -174,7 +167,6 @@
     align-items: center;
     justify-content: center;
 }
-
 
 .planeta {
     width: 25%;
@@ -197,7 +189,6 @@
     animation-iteration-count: infinite;
     animation-direction:alternate;
 }
-
 
 .adquiriPadre {
     margin-top: 82px;
@@ -308,6 +299,7 @@
     font-family: 'Montserrat';
     font-weight: 400;
     display: flex;
+    width: 80%;
 }
 
 .quienesBoton {
@@ -342,7 +334,6 @@
     width: 15%;
 }
 
-
 @keyframes vaca {
     from {
     transform: translateY(-10px);
@@ -365,43 +356,117 @@
     width: 50%;
 }
 
+@media screen and (min-width: 769px) and (max-width: 1024px) {
 
-@media screen and (min-width: 481px) and (max-width: 768px) {
+    .spanAdquiri {
+        padding-top: 19px;
+    }
+
+    .quienesHijo {
+        justify-content: center;
+    }
+
+    .container-img {
+        height: 100vh;
+    }
+
+    .orden {
+        padding-top: 30px;
+    }
+}
+
+ @media screen and (min-width: 481px) and (max-width: 768px) {
+
     .container-inicio {
         height: 100vh;
     }
 
+    .tituloWeb {
+        margin-right: 60px;
+    }
+
+    .planetita {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        margin-left: 60px;
+    }
+
+    .containerTitulo {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+    }
+
+    .expePadreMain {
+        flex-direction: column-reverse;
+    }
+
+    .astroMain {
+        width: 40%;
+    }
+
+    .astronautaMain {
+        padding-top: 30px;
+    }
+
+    @keyframes astroMain {
+        from {
+        transform: translatex(-10px);
+        }
+    
+        to {
+        transform: translatex(10px);
+        }
+    } 
+    
+    .astroMain {
+        transition: ease-in;
+        animation-duration: 5s;
+        animation-name: astroMain;
+        animation-iteration-count: infinite;
+        animation-direction:alternate;
+    }
+
     .sectio {
-        margin-top: 20% !important;
-        margin-bottom: 20% !important;
+        margin-top: 15%;
+        margin-bottom: 15%;
+    }
+
+    .tituloExpMain {
+        margin-left: 0;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        margin-top: 1.5rem;
     }
 
     .adquiriHijoMain {
-        line-height: normal;
+        justify-content: center;
+    }
+
+    .spanAdquiri {
+        height: 9vh;
     }
 
     .quienesHijo {
-        align-items: center;
         justify-content: center;
     }
 
     .orden {
-        padding-left: 57px;
-        padding-top: 100px;
-        padding-right: 10px;
-        padding-bottom: 100px;
+        padding-left: 30px;
+        gap: 2rem;
+        padding-top: 0px;
+        display: flex;
+        align-items: flex-start;
+        padding-bottom: 30px;
+        padding-right: 0;
+
     }
-
-    .containerTitulo {
-        width: 80%;
-    }
-
-    .planeta {
-        width: 30%;
-    }
-
-
-}
+} 
 
 @media screen and (min-width: 400px) and (max-width: 480px) {
     

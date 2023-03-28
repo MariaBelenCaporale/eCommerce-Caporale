@@ -4,17 +4,17 @@ import './NavBar.css';
 import logo from '../Assets/logo-02.png';
 import { Link, NavLink } from 'react-router-dom';
 import BurguerButton from './BurguerButton';
-import React, {useState} from 'react';
+import React, { useState } from 'react';
 import { click } from '@testing-library/user-event/dist/click';
 
 const NavBar = () => {
 
-    const [clicked, setClicked] = useState(false)    
+    const [clicked, setClicked] = useState(false)
 
     const handleClick = () => {
 
         setClicked(!clicked)
-        
+
     }
     return (
         <div className='navbar'>
@@ -50,24 +50,24 @@ const NavBar = () => {
                     </li>
 
                     <div className='carro' onClick={handleClick}>
-                <CartWidget />
-            </div>
+                        <CartWidget />
+                    </div>
                 </ul>
             </div>
-{/* 
+            {/* 
             <div className='carro'>
                 <CartWidget />
             </div> */}
-            
+
             <div className='burguer'>
-            <BurguerButton clicked={clicked} handleClick={handleClick} />
+                <BurguerButton clicked={clicked} handleClick={handleClick} />
             </div>
 
-            
-            <div className= {`initial ${clicked ? ' active' : ''}`}> </div>
-            
 
-            
+            <div className={`initial ${clicked ? ' active' : ''}`}> </div>
+
+
+
         </div>
     )
 };

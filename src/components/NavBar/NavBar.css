@@ -59,26 +59,44 @@
 
 /* RESPONSIVE */
 
+@media screen and (min-width: 769px) and (max-width: 1024px) {
 
+    .container-logo {
+        width: 20%;
+    }
+
+    .lista.active {
+        background-color: #151414f0;
+    }
+
+    .logo {
+        width: 80%;
+        margin-left: 30px;
+    }
+}
 
 @media screen and (min-width: 481px) and (max-width: 768px) {
 
     .navbar {
         margin-top: 0;
         padding-top: 30px;
+
     }
     .burguer{
         z-index: 9;
         display: block;
-        width: 100%;
+        width: auto;
     }
 
     .container-logo {
         width: 100%;
+        justify-content: flex-start;
     }
 
+
     .logo {
-        width: 40%;
+        width: 30%;
+        margin-left: 30px;
     }
 
     .nav-icon3 span {
@@ -116,9 +134,10 @@
         right: 0;
         text-align: center;
         /* background-color:#403bef; */
-        background-color: #151414;
+        background-color: #151414f0;
         height: 100vh;
     }
+
 }
 
 @media screen and (min-width: 320px) and (max-width: 480px) {

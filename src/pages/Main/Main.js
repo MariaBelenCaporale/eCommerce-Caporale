@@ -18,7 +18,7 @@ const Main = () => {
 
                 <div className='container-inicio'>
                     <div className='containerTitulo'>
-                        <div>
+                        <div className='planetita'>
                             <img className='planeta' src='./img/planeta-03.png' />
                         </div>
                         <h1 className='tituloWeb'><span className='span'>VIVÍ TU EXPERIENCIA GALÁCTICA</span></h1>
