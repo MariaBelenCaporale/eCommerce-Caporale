@@ -415,6 +415,14 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        flex-direction: column-reverse;
+    }
+
+    .astronautaMain {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
     }
 
     .span {
@@ -440,6 +448,7 @@
     .quienesHijo {
         align-items: center;
         justify-content: center;
+        font-size: 2rem;
     }
 
     .orden {
@@ -485,15 +494,12 @@
     }
 
     .astroMain {
-        display: none;
+        width: 70%;
     }
 
     .adquiriTextoMain {
         width: 87%;
-    }
-
-    .quienesHijo {
-        font-size: 2rem;
+        text-align: center;
     }
 
     .quienesPadre {
@@ -513,13 +519,20 @@
         padding-left: 17px;
         gap: 2rem;
         padding-top: 40px;
+        display: flex;
+        align-items: center;
     }
 
     .quienesSomos {
         align-items: center;
         font-size: 1.6rem;
-        justify-content: flex-start;
+        justify-content: center;
         display: flex;
+        text-align: center;
+    }
+
+    .quienesTexto {
+        text-align: center;
     }
 
 
@@ -559,6 +572,10 @@
         margin-bottom: 20% !important;
     }
 
+    .quienesTexto {
+        text-align: center;
+    }
+
     .quienesHijo {
         align-items: center;
         justify-content: center;
@@ -569,6 +586,8 @@
         padding-top: 100px;
         padding-right: 10px;
         padding-bottom: 100px;
+        display: flex;
+        align-items: center;
     }
 
     .containerTitulo {
@@ -612,6 +631,7 @@
 
     .adquiriTextoMain {
         width: 87%;
+        text-align: center;
     }
 
     .quienesHijo {
@@ -640,8 +660,9 @@
     .quienesSomos {
         align-items: center;
         font-size: 1.6rem;
-        justify-content: flex-start;
+        justify-content: center;
         display: flex;
+        text-align: center;
     }
 
 
