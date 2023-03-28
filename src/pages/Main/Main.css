@@ -411,6 +411,12 @@
         background-position: bottom;
     }
 
+    .expePadreMain {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
     .span {
         padding: 4px;
         height: 6vh;
@@ -461,16 +467,15 @@
     .tituloExpMain {
         margin-left: 0;
         justify-content: center;
-        align-items: flex-start;
+        align-items: center;
         display: flex;
         width: 100%;
         flex-direction: column;
-        margin-left: 50px;
     }
 
     .adquiriHijoMain {
         font-size: 2rem;
-        justify-content: flex-start;
+        justify-content: center;
         line-height: 1.7;
     }
 
