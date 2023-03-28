@@ -46,3 +46,15 @@
     color: #fb106c;
 }
 
+
+
+@media screen and (min-width: 480px) and (max-width: 768px) {
+    .logo-footer {
+        width: 30%;
+    }
+
+    .container-footer {
+        padding-left: 4rem;
+        padding-right: 4rem;
+    }
+}
