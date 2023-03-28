@@ -83,6 +83,33 @@
 }
 
 
+@media screen and (min-width: 400px) and (max-width: 480px) {
+
+    .expeHijo {
+        font-size: 2rem;
+        margin-top: 0;
+        justify-content: center;
+        width: 80%;
+    }
+
+    .tituloExp {
+        margin-top: 7rem;
+    }
+
+    .expeTexto {
+        width: 80%;
+        margin-top: 8rem;
+    }
+
+    .astro-padre {
+        margin-top: 138%;
+    }
+
+    .astro {
+        width: 35%;
+    }
+}
+
 @media screen and (min-width: 320px) and (max-width: 399px) {
 
     .expeHijo {

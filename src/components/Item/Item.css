@@ -58,6 +58,34 @@
 }
 
 
+@media screen and (min-width: 400px) and (max-width: 480px) {
+    .marciano {
+        background-color: #403bef;
+        width: 100%;
+        display: grid;
+        align-items: center;
+        height: auto;
+        grid-template-rows: 1fr 1fr;
+        justify-content: center;
+    }
+
+    .marciano-info {
+        padding: 0px;
+        justify-content: center;
+        align-items: center;
+        width: auto;
+    }
+
+    .marciano-pic {
+        width: 40%;
+        padding: 20px 20px 7px 20px;
+    }
+
+    .data-marciano {
+        padding: 0px 10px 10px 10px;
+    }
+}
+
 @media screen and (min-width: 320px) and (max-width: 399px) {
     
     .marciano {
