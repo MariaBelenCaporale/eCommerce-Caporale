@@ -58,3 +58,32 @@
         padding-right: 4rem;
     }
 }
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+
+    .list {
+        flex-direction: column;
+        font-size: .8rem;
+        gap: .5rem;
+    }
+
+    .logo-footer {
+        width: 50%;
+    }
+
+    .logo-footer {
+        width: 70%;
+    }
+
+    .container-list {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+
+    .container-footer {
+        width: auto;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+}

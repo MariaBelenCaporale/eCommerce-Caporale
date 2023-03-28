@@ -38,3 +38,9 @@
         padding-right: 0;
     }
 }
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+    .padreCarrito {
+        padding-right: 0;
+    }
+}

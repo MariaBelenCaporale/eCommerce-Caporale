@@ -132,6 +132,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        margin-top: 10px;
     }
 
     .container-logo {
@@ -184,7 +185,8 @@
         right: 0;
         text-align: center;
         /* background-color:#403bef; */
-        background-color: #151414;
+        /* background-color: #151414; */
+        background-color: #151414f0;
         height: 100vh;
     }
 }
