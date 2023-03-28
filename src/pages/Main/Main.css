@@ -418,8 +418,11 @@
     }
 
     .span {
-        padding: 4px;
+        padding-top: 10px;
+        padding-bottom: 8px;
         height: 6vh;
+        padding-left: 3px;
+        padding-right: 3px;
     }
 
     .spanAdquiri {
@@ -461,7 +464,7 @@
     }
 
     .tituloWeb {
-        font-size: 2rem;
+        font-size: 3rem;
         justify-content: center;
         line-height: 1.5;
     }
