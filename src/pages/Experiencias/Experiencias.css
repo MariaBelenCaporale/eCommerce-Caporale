@@ -19,7 +19,7 @@
 }
 
 .expeHijo {
-    margin-top: 6%;
+    /* margin-top: 6%; */
     font-size: 3rem;
     align-items: center;
     justify-content: center;
@@ -112,6 +112,7 @@
     .astro {
         width: 35%;
     }
+
 }
 
 @media screen and (min-width: 320px) and (max-width: 399px) {

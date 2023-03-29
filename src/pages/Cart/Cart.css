@@ -217,3 +217,12 @@
     width: 80%;
     margin-bottom: 2rem;
 }
+
+
+@media screen and (min-width: 320px) and (max-width: 399px) {
+
+    .controllers {
+        padding: 5px;
+        width: 100%;
+    }
+}
