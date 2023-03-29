@@ -224,6 +224,11 @@
         padding: 5px;
         width: 100%;
     }
+
+    .counter {
+        color: #FB106C;
+        font-family: 'Montserrat';
+    }
 }
 
 
