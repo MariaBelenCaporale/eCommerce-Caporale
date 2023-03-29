@@ -82,6 +82,44 @@
     animation-direction:alternate;
 }
 
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .expeHijo {
+        font-size: 3rem;
+        margin-top: 0;
+        justify-content: center;
+        width: 80%;
+    }
+
+    .tituloExp {
+        margin-top: 8rem;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .expeTexto {
+        width: 80%;
+        margin-top: 8rem;
+    }
+
+    .astro-padre {
+        margin-top: 80%;
+    }
+
+    .astro {
+        width: 35%;
+    }
+
+
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    .astro-padre {
+        margin-top: 100%;
+    }
+}
 
 @media screen and (min-width: 400px) and (max-width: 480px) {
 

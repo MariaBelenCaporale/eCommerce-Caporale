@@ -3,15 +3,17 @@ import Cards from 'react-credit-cards-2'
 import 'react-credit-cards-2/es/styles-compiled.css';
 import './PaymentForms.css';
 import swal from 'sweetalert';
+import { faL } from '@fortawesome/free-solid-svg-icons';
 
 
 
 
 const PaymentForms = () => {
-      
+
+            
 
     const [state, setState] = useState({
-        number: "",
+        number: "" ,
         name: "",
         expiry:"",
         cvc:"",
@@ -36,10 +38,21 @@ const PaymentForms = () => {
 
 
     const processPayment = () => {
-        swal({
-            title: 'Tu compra a sido realizada',
-            text: 'Muchas gracias',
-        })
+        if( state.cvc==""){
+            swal({
+                title: 'CVC Incorrecto',
+                text: 'Asegurate de haber completado el campo correctamente.',
+            });
+            
+        }else if(state.cvc) {
+            swal({
+                title: 'Tu compra a sido realizada',
+                text: 'Muchas gracias',
+            })
+        }
+            
+        
+        
         
     }; 
 
@@ -61,7 +74,7 @@ const PaymentForms = () => {
 
                     <div className='form-group'>
                         <label className='labelTar' htmlFor='number'>Número de tajerta</label>
-                        <input value={state.number} className='inputTar'
+                        <input value={state.number} className='inputTar' 
                             type="required"
                             name="number"
                             id="number"
@@ -127,12 +140,16 @@ const PaymentForms = () => {
                 
                 
 
-                <button onClick= {processPayment} type="button" className='botonCart sigue-comprando compra'>
-                    Comprar 
-                </button>
+                
                 
 
                 </form>
+
+                <div className='botonPago'>
+                <button onClick= {processPayment} type="button" className='botonCart sigue-comprando compra'>
+                    Comprar 
+                </button>
+                </div>
             </div>
         </div>
 

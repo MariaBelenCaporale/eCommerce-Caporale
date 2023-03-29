@@ -1,12 +1,26 @@
 
 .form-group {
+    /* display: flex;
+    color: white;
+    font-size: .8rem;
+    width: 100%;
+    font-family: 'Montserrat';
+    flex-direction: column;
+    margin-top: 1rem; */
+
     display: flex;
     color: white;
     font-size: .8rem;
     width: 100%;
     font-family: 'Montserrat';
     flex-direction: column;
-    margin-top: 1rem;
+}
+
+.botonPago {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .inputTar {
@@ -16,10 +30,19 @@
 
 .labelTar {
     padding-bottom: 10px;
+    font-family: 'Montserrat';
+    font-size: .9rem;
 }
 
 .formTar {
+    /* margin-top: 2rem; */
+
     margin-top: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    gap: 2rem;
+
 }
 
 .card {
@@ -28,6 +51,10 @@
 
 .compra {
     margin-top: 2rem;
+}
+
+.card-body {
+    width: 100%;
 }
 
 .swal-title {

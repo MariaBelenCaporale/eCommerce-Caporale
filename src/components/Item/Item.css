@@ -24,7 +24,7 @@
 }
 
 .data-marciano {
-    /* width: 100%; */
+    width: 100%; 
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -51,12 +51,82 @@
     align-items: center;
     justify-content: center;
     cursor: pointer;
+    width: 100%;
 }
 
 .botonCompra:hover {
     background-color: white;
 }
 
+
+
+@media screen and (min-width: 760px) and (max-width: 1024px) {
+    .marciano {
+        background-color: #403bef;
+        width: 100%;
+        display: grid;
+        align-items: center;
+        height: auto;
+        grid-template-rows: 1fr 1fr;
+        justify-content: center;
+    }
+
+    .marciano-info {
+        padding: 0px;
+        justify-content: center;
+        align-items: center;
+        width: auto;
+    }
+
+    .marciano-pic {
+        width: 40%;
+        padding: 20px 20px 7px 20px;
+    }
+
+    .data-marciano {
+        padding: 0px 10px 10px 10px;
+        width: auto;
+    }
+
+    .botonCompra {
+        color: black;
+        font-family: 'Montserrat';
+    }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    .marciano {
+        background-color: #403bef;
+        width: 100%;
+        display: grid;
+        align-items: center;
+        height: auto;
+        grid-template-rows: 1fr 1fr;
+        justify-content: center;
+    }
+
+    .marciano-info {
+        padding: 0px;
+        justify-content: center;
+        align-items: center;
+        width: auto;
+    }
+
+    .marciano-pic {
+        width: 40%;
+        padding: 20px 20px 7px 20px;
+    }
+
+    .data-marciano {
+        padding: 0px 10px 10px 10px;
+        width: auto;
+    }
+
+    .botonCompra {
+        color: black;
+        font-family: 'Montserrat';
+    }
+}
 
 @media screen and (min-width: 400px) and (max-width: 480px) {
     .marciano {
@@ -83,6 +153,7 @@
 
     .data-marciano {
         padding: 0px 10px 10px 10px;
+        width: auto;
     }
 
     .botonCompra {
@@ -117,5 +188,6 @@
 
     .data-marciano {
         padding: 0px 10px 10px 10px;
+        width: auto;
     }
 }

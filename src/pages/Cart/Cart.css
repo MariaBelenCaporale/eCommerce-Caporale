@@ -1,6 +1,6 @@
 
 .contieneCart {
-    height: 130vh;
+    /* height: 130vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -8,16 +8,34 @@
     flex-direction: row;
     margin-top: 9%;
     padding-left: 3rem;
+    padding-right: 3rem; */
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    flex-direction: column;
+    margin-top: 13%;
+    padding-left: 3rem;
     padding-right: 3rem;
     }
 
 .contieneCartHijo {
-    background-color: #151414;
+    /* background-color: #151414;
     align-items: center;
     font-family: 'Montserrat', sans-serif;
     padding: 50px;
     width: 40%;
     height: 100vh;
+    box-shadow: 0 0 60px 0 rgb(0 0 0);
+    display: flex;
+    flex-direction: column; */
+    background-color: #151414;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    padding: 50px;
+    width: 60%;
+    height: auto;
     box-shadow: 0 0 60px 0 rgb(0 0 0);
     display: flex;
     flex-direction: column;
@@ -28,22 +46,33 @@
     height: auto;}
 
 .elimina-todo {
-    background-color:#999999;
+    background-color:#403bef;
+    color: white;
 }
 
 .sigue-comprando {
     background-color: #f9c900;
+    color: black;
 }
 
 .contieneCartHijoBoton {
-    width: 80%;
+    /* width: 80%;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
     margin-top: 2rem;
     gap: 1rem;
-    flex-direction: column;
+    flex-direction: column; */
+
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    gap: 1rem;
+    flex-direction: row;
 }
 
 .productCart {
@@ -62,7 +91,7 @@
     width: 100%;
     padding: 10px;
     font-weight: 500;
-    color: #000036;
+    color: black;
     font-family: 'Montserrat';
     font-size: .9rem;
     align-items: center;
@@ -80,15 +109,21 @@
     align-items: center;
     justify-content: center;
     cursor: pointer;
-    width: 100%;
-    color: black;
+    width: 30%;
     margin-top: 1rem;
     text-decoration: none;
 }
 
-.botonCart:hover {
+.sigue-comprando:hover {
     background-color: white;
     border: 1px solid black;
+    color: black;
+}
+
+.elimina-todo:hover {
+    border: 1px solid black;
+    background-color: white;
+    color: black;
 }
 
 .totalDeCompraForm {
@@ -109,7 +144,7 @@
 }
 
 .detailCart {
-    font-size: 1rem;
+    font-size: 1.5rem;
     font-weight: 400;
     margin-bottom: 2rem;
     padding-left: 10px;
@@ -157,6 +192,10 @@
     padding: 10px;
 }
 
+.borrarProducts:hover {
+    color: #FB106C;
+}
+
 
 .listado {
     display: flex;
@@ -172,7 +211,7 @@
 }
 
 .contieneForm {
-    background-color: #151414;
+    /* background-color: #151414;
     align-items: center;
     font-family: 'Montserrat', sans-serif;
     padding: 50px;
@@ -181,7 +220,19 @@
     height: 100vh;
     box-shadow: 0 0 60px 0 rgb(0 0 0);
     flex-direction: column;
+    justify-content: center; */
+
+    background-color: #151414;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    padding: 0px 50px 50px 50px;
+    width: 60%;
+    display: flex;
+    height: 100vh;
+    box-shadow: 0px 50px 60px 0px rgb(0 0 0);
+    flex-direction: column;
     justify-content: center;
+    margin-bottom: 5rem;
 }
 
 .tituloFormCompletar {
@@ -199,6 +250,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    width: 100%;
 }
 
 .textTar {
@@ -217,6 +269,18 @@
 }
 
 
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    .controllers {
+        padding: 5px;
+        width: 100%;
+    }
+
+    .counter {
+        color: #FB106C;
+        font-family: 'Montserrat';
+    }
+}
 
 
 @media screen and (min-width: 400px) and (max-width: 480px) {

@@ -19,7 +19,24 @@
     text-decoration: none;
 }
 
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .itemList{
+        margin-top: 13rem;
+        grid-template-columns: 1fr 1fr;
+        padding: 20px 20px 20px 20px;
+        gap: 1.5rem;
+    }
+}
 
+@media screen and (min-width: 481px) and (max-width: 768px) {
+
+    .itemList{
+        margin-top: 3rem;
+        grid-template-columns: 1fr 1fr;
+        padding: 20px 20px 20px 20px;
+        gap: 1.5rem;
+    }
+}
 
 @media screen and (min-width: 400px) and (max-width: 480px) {
 
@@ -30,7 +47,6 @@
         gap: 1.5rem;
     }
 }
-
 
 @media screen and (min-width: 320px) and (max-width: 399px) {
     
