@@ -1,14 +1,18 @@
 .masMenos {
     cursor: pointer;
-    background-color: white;
     border: none;
     width: 40px;
     height: auto;
     font-size: 1.5rem;
+    background: none;
+}
+
+.masMenos:hover {
+    color: #fb106c;
 }
 
 .spanCount {
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-family: 'Montserrat';
     font-weight: 500;
     width: 100%;

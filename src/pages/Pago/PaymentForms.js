@@ -3,15 +3,14 @@ import Cards from 'react-credit-cards-2'
 import 'react-credit-cards-2/es/styles-compiled.css';
 import './PaymentForms.css';
 import swal from 'sweetalert';
-import { faL } from '@fortawesome/free-solid-svg-icons';
+
 
 
 
 
 const PaymentForms = () => {
 
-            
-
+    
     const [state, setState] = useState({
         number: "" ,
         name: "",
@@ -19,6 +18,7 @@ const PaymentForms = () => {
         cvc:"",
         focus:"",
         email:"",
+        confirm:"",
     })
 
     const handleInputChange = (e) => {
@@ -39,6 +39,7 @@ const PaymentForms = () => {
 
     const processPayment = () => {
         if( state.cvc==""){
+            
             swal({
                 title: 'CVC Incorrecto',
                 text: 'Asegurate de haber completado el campo correctamente.',
@@ -58,9 +59,11 @@ const PaymentForms = () => {
 
     
     return (
+        
         <div className='card'>
+         <h2 className='datos'>Ingresar datos</h2>
             <div className='card-body'>
-
+   
                 <Cards 
                 number={state.number}
                 name={state.name}
@@ -68,21 +71,25 @@ const PaymentForms = () => {
                 cvc={state.cvc}
                 focused={state.focus}
                 email={state.email}
+                confirm={state.confirm}
                 />
 
                 <form className='formTar'>
-
+                    
                     <div className='form-group'>
                         <label className='labelTar' htmlFor='number'>Número de tajerta</label>
-                        <input value={state.number} className='inputTar' 
+                        <input value={state.number} className='inputTar'  
                             type="required"
                             name="number"
                             id="number"
                             placeholder='1234 1234 1234 1234'
                             maxLength="16"
+
                             
                             onChange={handleInputChange}
                             onFocus={handleFocusChange}
+
+                            
                         />
                     </div>
                     <div className='form-group'>
@@ -96,6 +103,7 @@ const PaymentForms = () => {
                             onChange={handleInputChange}
                             onFocus={handleFocusChange}
                         />
+                        
                     </div>
 
                 
@@ -107,6 +115,8 @@ const PaymentForms = () => {
                             id="expiry"
                             maxLength="4"
                             placeholder='0925'
+
+
                             onChange={handleInputChange}
                             onFocus={handleFocusChange}
                         />
@@ -137,6 +147,21 @@ const PaymentForms = () => {
                             onFocus={handleFocusChange}
                         />
                     </div>
+
+                    <div className='form-group'>
+                        <label className='labelTar' htmlFor='confirm'>Confirmar Email</label>
+                        <input value={state.confirm} className='inputTar'
+                            type="pattern"
+                            name="confirm"
+                            id="confirm"
+                            placeholder='ejemplo@ejemplo.com'
+                            maxLength="30"
+                            onChange={handleInputChange}
+                            onFocus={handleFocusChange}
+                        />
+                    </div>
+
+                 
                 
                 
 
@@ -145,12 +170,13 @@ const PaymentForms = () => {
 
                 </form>
 
-                <div className='botonPago'>
+                
+            </div>
+            <div className='botonPago'>
                 <button onClick= {processPayment} type="button" className='botonCart sigue-comprando compra'>
                     Comprar 
                 </button>
                 </div>
-            </div>
         </div>
 
     )

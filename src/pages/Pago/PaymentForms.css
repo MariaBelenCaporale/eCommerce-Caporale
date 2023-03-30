@@ -8,8 +8,15 @@
     flex-direction: column;
     margin-top: 1rem; */
 
-    display: flex;
+    /* display: flex;
     color: white;
+    font-size: .8rem;
+    width: 100%;
+    font-family: 'Montserrat';
+    flex-direction: column; */
+
+    display: flex;
+    color: #121212;
     font-size: .8rem;
     width: 100%;
     font-family: 'Montserrat';
@@ -17,19 +24,39 @@
 }
 
 .botonPago {
+    /* width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center; */
+
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-top: 2rem;
 }
 
 .inputTar {
+    /* width: auto;
+    padding: 5px; */
+
+    background: #151414;
     width: auto;
-    padding: 5px;
+    padding: 10px;
+    border-bottom: 1px solid white;
+    color: #f9c900;
+
+    border-inline-style: none;
+    border-top: hidden;
+
+}
+
+.inputTar:focus {
+    border: 1px solid white;
+    outline: none;
 }
 
 .labelTar {
-    padding-bottom: 10px;
     font-family: 'Montserrat';
     font-size: .9rem;
 }
@@ -37,11 +64,17 @@
 .formTar {
     /* margin-top: 2rem; */
 
-    margin-top: 2rem;
+    /* margin-top: 2rem;
     display: grid;
     grid-template-columns: 1fr 1fr;
     width: 100%;
-    gap: 2rem;
+    gap: 2rem; */
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    gap: 1rem;
+    padding: 0px 0px 0px 30px;
 
 }
 
@@ -51,10 +84,32 @@
 
 .compra {
     margin-top: 2rem;
+    width: 30%;
+}
+
+
+.datos {
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    /* flex-direction: column; */
+    position: absolute;
+    margin-top: 2rem;
+    color: white;
+    width: 60%;
+    font-weight: 200;
+    font-size: 1.2rem;
 }
 
 .card-body {
-    width: 100%;
+    padding: 86px;
+    display: flex;
+    width: auto;
+    align-items: center;
+    justify-content: center;
+    /* background: radial-gradient(black, transparent); */
+    /* background: rgb(228 228 228); */
+    box-shadow: 0px 0px 30px 10px rgb(0 0 0);
 }
 
 .swal-title {
@@ -95,4 +150,15 @@
 
 .swal-button-container {
     width: 80%;
+}
+
+.rccs__card--unknown > div {
+    background: linear-gradient(228deg, #151414, #403bef);
+    box-shadow: none;
+    margin-top: 0.5rem;
+}
+
+
+@media screen and (min-width: 320px) and (max-width: 399px) {
+    
 }

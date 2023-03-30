@@ -75,6 +75,20 @@ const Cart = () => {
         <div className='sosten'>
             <div className='contieneCart'>
 
+
+            <div className='contieneForm'>
+                    
+                    <div className='textTar'>
+                        <h2 className='tituloFormCompletar'>Realizá tu compra</h2>
+                        <p className='boucher'>Una vez que haya realizado el pago, se le enviará un email con su boucher.</p>
+                    </div>
+                    <div className='layout'>
+                        <PaymentForms />
+                    </div>
+
+                </div>
+
+                
                 <div className='contieneCartHijo'>
                     <h2 className='detailCart'>Detalle de compra</h2>
 
@@ -84,15 +98,19 @@ const Cart = () => {
                         )
                     }
                     {cart.map((product) => (
+                        <div className='contieneTodito'>
                         <div className='productCart' key={product.name}>
                             <ItemCart product={product} />
 
-                            <button className='borrarProducts' onClick={() => removeItem(product.id)}>X</button>
+                            <button className='borrarProducts' onClick={() => removeItem(product.id)}>Eliminar</button>
 
+                        </div>
                         </div>
                     ))}
 
-
+<div className='totalDeCompraForm'>
+                        <span>Total: USD {total}</span>
+                    </div>
                     <div className='contieneCartHijoBoton'>
 
                         {cart.length > 0 && <button className='botonCart elimina-todo' onClick={clear}>Vaciar carrito</button>}
@@ -102,23 +120,12 @@ const Cart = () => {
 
 
                     </div>
+                    
                 </div>
 
 
 
-                <div className='contieneForm'>
-                    <div className='totalDeCompraForm'>
-                        <span>Total: USD {total}</span>
-                    </div>
-                    <div className='textTar'>
-                        <h2 className='tituloFormCompletar'>Ingresá tus datos</h2>
-                        <p className='boucher'>Una vez que haya realizado el pago, se le enviará un email con su boucher.</p>
-                    </div>
-                    <div className='layout'>
-                        <PaymentForms />
-                    </div>
-
-                </div>
+                
 
 
             </div>
