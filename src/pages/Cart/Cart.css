@@ -117,20 +117,13 @@
 }
 
 .productoCart {
-    /* width: 100%;
-    padding: 10px;
-    font-weight: 500;
-    color: black;
-    font-family: 'Montserrat';
-    font-size: .9rem;
-    align-items: center;
-    display: flex; */
+
     width: 100%;
     padding: 10px 10px 5px 10px;
     font-weight: 500;
     color: black;
     font-family: 'Montserrat';
-    font-size: .8rem;
+    font-size: 1rem;
     align-items: center;
     display: flex;
 }
@@ -238,11 +231,8 @@
 .borrarProducts {
     background: none;
     cursor: pointer;
-    /* display: grid; */
-    /* grid-template-columns: 1fr; */
-    /* justify-content: center; */
     border: none;
-    font-size: .8rem;
+    font-size: 1rem;
     padding: 0px 10px;
     align-items: flex-start;
     justify-content: flex-start;
@@ -391,81 +381,86 @@
         font-family: 'Montserrat';
     }
 }
-
+*/
 
 @media screen and (min-width: 320px) and (max-width: 399px) {
 
-    .controllers {
-        padding: 5px;
-        width: 100%;
-    }
-
-    .sosten {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
     .contieneCart {
-        width: 100%;
-        margin-top: 40%;
-        padding: 0;
-    }
-
-    .contieneCartHijo {
-        flex-direction: column;
+        display: flex;
+        flex-direction: column-reverse;
+        margin-top: 9rem;
     }
 
     .detailCart {
-        font-size: 1rem;
-        font-family: 'Montserrat';
-        padding-left: 0;
-        font-weight: 400;
-        color: #f9c900;
+        font-size: 1.4rem;
+        margin-top: 3rem;
     }
 
     .productCart {
         width: 100%;
-        justify-content: stretch;
-        flex-direction: column;
-        border: 1px solid #151414;
+        align-items: flex-start;
     }
 
     .productoCart {
+        padding: 5px 10px 5px 10px;
         justify-content: center;
-        font-weight: 600;
+    }
+
+    .borrarProducts {
+        padding: 0;
+        width: 100%;
+    }
+
+    .contieneTodito {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .borrarProducts {
+        padding: 10px;
+    }
+
+    .contieneCartHijo {
+        padding: 0;
+        height: auto;
+    }
+
+    .totalDeCompraForm {
+        margin-top: 2rem;
+    }
+
+    .botonCart {
+        width: 50%;
     }
 
     .contieneCartHijoBoton {
         width: 100%;
         flex-direction: column;
-    }
-
-    .botonCart {
-        width: 100%;
-        margin-top: 0;
+        margin-top: 1rem;
+        gap: 0;
+        margin-bottom: 2rem;
     }
 
     .contieneForm {
+        padding: 0;
         height: auto;
     }
 
-    .totalDeCompraForm {
-        font-size: 1.3rem;
-        padding: 10px;
+    .textTar {
+        margin-top: 2rem;
     }
 
     .tituloFormCompletar {
-        font-size: 1.3rem;
-        margin-bottom: 1.5rem;
+        font-size: 1.5rem;
+        font-family: 'Montserrat';
+        color: white;
     }
 
     .boucher {
-        width: 100%;
+        width: 80%;
     }
 
-    .rccs__card--unknown > div {
-        background: linear-gradient(25deg, #403bef, #151414);
-    }
-} */
+    
+} 

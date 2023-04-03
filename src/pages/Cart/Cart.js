@@ -7,8 +7,6 @@ import ItemCart from './ItemCart';
 import PaymentForms from '../Pago/PaymentForms';
 
 
-
-
 const Cart = () => {
     const { cart, clear, removeItem, total } = useContext(CartContext);
     const [formValue, setFormValue] = useState({
@@ -71,6 +69,7 @@ const Cart = () => {
         });
     };
 
+
     return (
         <div className='sosten'>
             <div className='contieneCart'>
@@ -83,7 +82,9 @@ const Cart = () => {
                         <p className='boucher'>Una vez que haya realizado el pago, se le enviará un email con su boucher.</p>
                     </div>
                     <div className='layout'>
-                        <PaymentForms />
+                        <PaymentForms  />
+
+                        
                     </div>
 
                 </div>

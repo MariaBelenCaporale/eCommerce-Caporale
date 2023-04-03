@@ -24,16 +24,13 @@
 }
 
 .botonPago {
-    /* width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center; */
-
     width: 100%;
-    display: flex;
-    align-items: center;
+    display: grid;
     justify-content: center;
-    margin-top: 2rem;
+    /* margin-top: 5rem; */
+    grid-template-columns: 1fr;
+    grid-column-start: 1;
+    grid-column-end: 3;
 }
 
 .inputTar {
@@ -62,19 +59,12 @@
 }
 
 .formTar {
-    /* margin-top: 2rem; */
-
-    /* margin-top: 2rem;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    width: 100%;
-    gap: 2rem; */
-
     display: grid;
     grid-template-columns: 1fr 1fr;
     width: 100%;
     gap: 1rem;
     padding: 0px 0px 0px 30px;
+    margin-top: 2rem;
 
 }
 
@@ -83,18 +73,35 @@
 }
 
 .compra {
-    margin-top: 2rem;
-    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
 }
 
+.complitoForm {
+    display: flex;
+    width: 35%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: flex;
+    margin-top: 10rem;
+    position: absolute;
+}
+
+.errores {
+    color: #fb106c;
+    font-family: 'Montserrat';
+    font-size: 1rem;
+    padding-top: 5px;
+}
 
 .datos {
     display: flex;
-    /* align-items: center; */
+    align-items: center;
     justify-content: center;
-    /* flex-direction: column; */
     position: absolute;
-    margin-top: 2rem;
+    margin-top: 4rem;
     color: white;
     width: 60%;
     font-weight: 200;
@@ -120,6 +127,7 @@
 .swal-text {
     color: black;
     font-family: 'Montserrat';
+    text-align: center;
 }
 
 .swal-button {
@@ -155,10 +163,40 @@
 .rccs__card--unknown > div {
     background: linear-gradient(228deg, #151414, #403bef);
     box-shadow: none;
-    margin-top: 0.5rem;
+    margin-top: -2.5rem;
+}
+
+.rccs {
+    margin-top: 2rem !important;
 }
 
 
 @media screen and (min-width: 320px) and (max-width: 399px) {
     
+    .card-body {
+        flex-direction: column;
+        padding: 0;
+        width: 100%;
+    }
+
+    .card {
+        display: flex;
+        justify-content: center;
+    }
+
+    .rccs {
+        margin-top: 7rem !important;
+    }
+    
+    .formTar {
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        padding: 0;
+        margin-bottom: 3rem;
+    }
+
+    .datos {
+        margin-top: 2rem;
+    }
 }
