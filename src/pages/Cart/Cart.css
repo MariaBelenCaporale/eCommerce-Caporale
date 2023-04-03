@@ -357,31 +357,88 @@
 
 
 
-/* @media screen and (min-width: 481px) and (max-width: 768px) {
-    .controllers {
-        padding: 5px;
-        width: 100%;
-    }
-
-    .counter {
-        color: #FB106C;
-        font-family: 'Montserrat';
-    }
-}
-
 
 @media screen and (min-width: 400px) and (max-width: 480px) {
-    .controllers {
-        padding: 5px;
+
+    .contieneCart {
+        display: flex;
+        flex-direction: column-reverse;
+        margin-top: 9rem;
+    }
+
+    .detailCart {
+        font-size: 1.4rem;
+        margin-top: 3rem;
+    }
+
+    .productCart {
+        width: 100%;
+        align-items: flex-start;
+    }
+
+    .productoCart {
+        padding: 5px 10px 5px 10px;
+        justify-content: center;
+    }
+
+    .borrarProducts {
+        padding: 0;
         width: 100%;
     }
 
-    .counter {
-        color: #FB106C;
-        font-family: 'Montserrat';
+    .contieneTodito {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: center;
     }
-}
-*/
+
+    .borrarProducts {
+        padding: 10px;
+    }
+
+    .contieneCartHijo {
+        padding: 0;
+        height: auto;
+    }
+
+    .totalDeCompraForm {
+        margin-top: 2rem;
+    }
+
+    .botonCart {
+        width: 50%;
+    }
+
+    .contieneCartHijoBoton {
+        width: 100%;
+        flex-direction: column;
+        margin-top: 1rem;
+        gap: 0;
+        margin-bottom: 2rem;
+    }
+
+    .contieneForm {
+        padding: 0;
+        height: auto;
+    }
+
+    .textTar {
+        margin-top: 2rem;
+    }
+
+    .tituloFormCompletar {
+        font-size: 1.5rem;
+        font-family: 'Montserrat';
+        color: white;
+    }
+
+    .boucher {
+        width: 80%;
+    }
+
+    
+} 
 
 @media screen and (min-width: 320px) and (max-width: 399px) {
 
