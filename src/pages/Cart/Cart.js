@@ -21,6 +21,7 @@ const Cart = () => {
     const navigate = useNavigate();
 
 
+
     const createOrder = (event) => {
         event.preventDefault();
         const db = getFirestore();
@@ -41,6 +42,7 @@ const Cart = () => {
                     id: product.id,
                     quantity: product.quantity,
                 }
+                
             }),
             total: total,
         })

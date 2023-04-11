@@ -8,6 +8,8 @@ import { toBeRequired } from '@testing-library/jest-dom/dist/matchers';
 import Cart from '../Cart/Cart';
 import { CartContext } from '../../Context/CartContext';
 import { Button } from 'react-bootstrap';
+import { click } from '@testing-library/user-event/dist/click';
+import { clear } from '@testing-library/user-event/dist/clear';
 
 
 
@@ -20,9 +22,14 @@ const PaymentForms = () => {
 
     const { cart, clear, removeItem, total } = useContext(CartContext);
 
-    const { register, formState: { errors }, handleSubmit, } = useForm({
+    const { register, formState: { errors }, handleSubmit } = useForm({
         mode: "all"
     });
+
+
+
+
+
 
     const onSubmit = (data, e) => {
         
@@ -59,14 +66,7 @@ const PaymentForms = () => {
         })
     }
 
-    const borra = (Submit) => {
-        if(register) {
-            alert("oka")
-        }else {
-            alert("noooo")
-        }
-    }
-
+  
 
 
 
@@ -215,8 +215,7 @@ const PaymentForms = () => {
 
                     <div className='botonPago'>
                         <input 
-                        type="Submit" 
-                        onClick={borra}
+                        type="Submit"  
                         
                         className='botonCart sigue-comprando compra'
                          />
