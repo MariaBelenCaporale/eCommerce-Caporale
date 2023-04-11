@@ -1,41 +1,44 @@
 .detalles-section {
-    height: 100vh;
+    height: auto;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 .descript {
+    margin-top: 2rem;
+    font-weight: 700;
     margin-bottom: 2rem;
+    color: white;
+    width: 100%;
 }
 
 .pa {
-    margin-top: 13rem;
+    margin-top: 10rem;
     width: 100%;
     align-items: center;
     justify-content: center;
     display: flex;
-    margin-bottom: 3rem;
 }
 
 .padreDetail {
-    /* padding: 50px; */
+    padding: 50px;
     align-items: center;
     font-family: 'Montserrat', sans-serif;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    flex-direction: row;
+    gap: 5rem;
     justify-content: center;
     height: auto;
-    /* border: 2px solid #403bef; */
-    margin-bottom: 5%;
-    width: 80%;
-    /* background-color: #403bef; */
-    background-color: rgb(243 243 243 / 77%);
+    /* background-color: white; */
+    width: 70%;
+    margin-bottom: 6rem;
+    /* width: 50%; */
     box-shadow: 0 0 60px 0 rgb(0 0 0);
 }
 
 .imgDetail {
-    width: 50%;
+    width: 70%;
     align-items: center;
     justify-content: center;
     display: flex;
@@ -45,8 +48,8 @@
     width: 100%;
     display: flex;
     justify-content: center;
-    background: #403bef;
-    grid-template-columns: 1fr;
+    /* background: #403bef; */
+    /* grid-template-columns: 1fr; */
     align-items: center;
 }
 
@@ -57,8 +60,8 @@
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
-    padding: 0px 0px 0px 80px;
-    color: black;
+    /* padding: 0px 0px 0px 80px; */
+    color: white;
     font-family: 'Montserrat';
 }
 
@@ -75,21 +78,21 @@
 }
 
 .descriptionDetail {
-    color: black;
+    color: white;
     font-size: 1.2rem;
     font-weight: 500;
 }
 
 .usd {
-    font-size: 1.8em;
-    font-weight: 200;
+    font-size: 1rem;
+    font-weight: 600;
     padding-bottom: 30px;
 }
 
 .textoDetalles {
     width: 80%;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 .botonesPreCompra {
@@ -97,6 +100,7 @@
     display: flex;
     flex-direction: row;
     gap: 1rem;
+    margin-top: 3rem;
 }
 
 .boton-pre {
@@ -108,7 +112,7 @@
     text-decoration: none;
     background-color:#f9c900;
     border: none;
-    width: 33%;
+    width: 60%;
     height: 5vh;
     display: flex;
     align-items: center;
@@ -121,7 +125,8 @@ background-color:#f9c900;
 }
 
 .boton-pre:hover {
-    background-color: antiquewhite;
+    background-color: white;
+    border: 1px solid black;
 }
 
 .Toastify__zoom-enter {

@@ -1,0 +1,248 @@
+
+.contieneCartW {
+    height: auto;
+    width: 100%;
+    }
+
+.contieneCartHijoW {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    overflow-y: auto;
+    height: 400px;
+    padding-bottom: 30px;
+}
+
+.sostenW {    
+    display: flex;
+    height: auto;
+    width: 100%;
+}
+
+.elimina-todoW {
+    background-color:#151414;
+    color: white;
+}
+
+.sigue-comprandoW {
+    background-color: #f9c900;
+    color: black;
+    font-size: 1rem;
+}
+
+.contieneCartHijoBotonW {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* .contieneToditoW {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+} */
+
+.productCartW {
+    display: grid;
+    justify-content: space-around;
+    align-items: center;
+    grid-template-columns: 1fr;
+}
+
+.productoCartW{
+    width: 100%;
+    font-weight: 500;
+    color: white;
+    font-family: 'Montserrat';
+    font-size: 1rem;
+    align-items: center;
+    display: flex;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.productoTit {
+    display: grid;
+    width: 100%;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.productoCart2 {
+    width: 100%;
+    font-weight: 700;
+    color:#f9c900;
+    font-family: 'Montserrat';
+    font-size: 1rem;
+    align-items: center;
+    display: flex;
+}
+
+.botonCartW {
+    font-family: 'Montserrat';
+    font-weight: 500;
+    border: none;
+    height: 5vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    width: 50%;
+    margin-top: 1rem;
+    text-decoration: none;
+}
+
+.sigue-comprandoW:hover {
+    background-color: white;
+    border: 1px solid black;
+    color: black;
+}
+
+.elimina-todoW:hover {
+    border: 1px solid black;
+    background-color: white;
+    color: black;
+}
+
+.seguir {
+    background-color: white;
+    font-size: .8rem;
+}
+
+.totalDeCompraFormW {
+    color: black;
+    display: flex;
+    padding: 0px;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    font-weight: 600;
+    font-size: 1.3rem;
+    font-family: 'Montserrat';
+}
+
+.borra-btn-xW {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.ContieneFin {
+    display: flex;
+    height: 30vh;
+    flex-direction: column;
+    padding: 20px;
+    border-top: 1px solid white;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+}
+
+
+.counterW {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    color:#151414;
+}
+
+.total2 {
+    padding: 10px;
+    font-weight: 600;
+    font-size: 1.3rem;
+}
+
+.negativoProductsW {
+    font-family: 'Montserrat';
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: 500;
+    font-size: 1rem;
+
+}
+
+.borrarProductsW {
+    grid-column-start: 1;
+    width: 25px;
+    height: 25px;
+    border: none;
+    background: none;
+    cursor: pointer;
+    transition: .3s ease all;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.borrarProductsW:hover {
+    color: #fb106c;
+}
+
+.listadoW {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.listadoW h3 {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.contieneFormW {
+    background-color: #151414;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    padding: 0px 50px 50px 50px;
+    width: 100%;
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+}
+
+.tituloFormCompletarW {
+    color: white;
+    font-size: 1.7rem;
+    font-weight: 400;
+    margin-bottom: 0.5rem;
+    margin-top: 1rem;
+    justify-content: center;
+    display: flex;
+    width: 100%;
+}
+
+.layoutW {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+    margin-top: 2rem;
+}
+
+.textTarW {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: #151414;
+    width: 100%;
+}
+
+.boucherW {
+    text-align: center;
+    width: 100%;
+    color: white;
+    margin-bottom: 2rem;
+    justify-content: center;
+    display: flex;
+}

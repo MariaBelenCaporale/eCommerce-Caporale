@@ -15,6 +15,26 @@
     position: relative;
 }
 
+.botonCompra {
+    margin-top: 50px;
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 1rem;
+    text-decoration: none;
+    background-color: #f9c900;
+    border: none;
+    height: 5vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    width: 100%;
+}
+
+.botonCompra:hover {
+    background-color: white;
+}
+
 .linkUno {
     text-decoration: none;
 }

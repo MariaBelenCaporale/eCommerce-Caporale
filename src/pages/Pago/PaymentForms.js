@@ -1,10 +1,13 @@
-import React, { useState } from 'react'
+import React, { useState, useContext } from 'react'
 import Cards from 'react-credit-cards-2';
 import 'react-credit-cards-2/es/styles-compiled.css';
 import './PaymentForms.css';
 import swal from 'sweetalert';
 import { useForm } from "react-hook-form"
 import { toBeRequired } from '@testing-library/jest-dom/dist/matchers';
+import Cart from '../Cart/Cart';
+import { CartContext } from '../../Context/CartContext';
+import { Button } from 'react-bootstrap';
 
 
 
@@ -15,18 +18,23 @@ import { toBeRequired } from '@testing-library/jest-dom/dist/matchers';
 
 const PaymentForms = () => {
 
-    const { register, formState: { errors }, handleSubmit } = useForm({
+    const { cart, clear, removeItem, total } = useContext(CartContext);
+
+    const { register, formState: { errors }, handleSubmit, } = useForm({
         mode: "all"
     });
 
     const onSubmit = (data, e) => {
+        
         swal(
             'Pago realizado',
             'En las próximas 24hs recibirás un email con tu boucher',
             'success'
         )
         e.target.reset();
+
     }
+
 
     const [state, setState] = useState({
         number: '',
@@ -50,6 +58,17 @@ const PaymentForms = () => {
             focus: e.target.name
         })
     }
+
+    const borra = (Submit) => {
+        if(register) {
+            alert("oka")
+        }else {
+            alert("noooo")
+        }
+    }
+
+
+
 
 
 
@@ -197,10 +216,13 @@ const PaymentForms = () => {
                     <div className='botonPago'>
                         <input 
                         type="Submit" 
+                        onClick={borra}
+                        
                         className='botonCart sigue-comprando compra'
                          />
  
                     </div> 
+                   
                 </form>
 
 

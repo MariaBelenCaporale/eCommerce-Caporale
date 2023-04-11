@@ -1,63 +1,64 @@
 
 .contieneCart {
+    margin-top: 5rem;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    width: 100%;
+    flex-direction: row;
+    gap: 3rem;
+    margin-bottom: 5rem;
+    height: auto;
+}
+  
+.fijoTotal {
+    justify-content: center;
+    display: flex;
+    /* overflow-y: auto; */
+    /* height: 194px; */
+    align-items: center;
+    position: absolute;
+    margin-bottom: 350px;
+    background:#151414;
+    width: 80%;
+    height: 65px;
+}
+
+.contieneCarte {
     height: auto;
     display: flex;
     align-items: center;
     justify-content: center;
     width: 100%;
     flex-direction: row;
-    margin-top: 14rem;
-    /* padding-left: 3rem; */
     padding-right: 0;
-
-    /* height: auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
     flex-direction: column;
-    margin-top: 13%;
-    padding-left: 3rem;
-    padding-right: 3rem; */
-    }
+    position: relative;
+}
+
 
 .contieneCartHijo {
-    /* background-color: #151414;
     align-items: center;
     font-family: 'Montserrat', sans-serif;
-    padding: 50px;
-    width: 40%;
-    height: 100vh;
-    box-shadow: 0 0 60px 0 rgb(0 0 0);
-    display: flex;
-    flex-direction: column; */
-
-    /* background-color: #151414;
-    align-items: center;
-    font-family: 'Montserrat', sans-serif;
-    padding: 50px;
-    width: 60%;
+    padding: 100px 50px 0px 50px;
+    width: auto;
+    border: 1px solid white;
     height: auto;
-    box-shadow: 0 0 60px 0 rgb(0 0 0);
-    display: flex;
-    flex-direction: column; */
-
-    background-color: rgb(243 243 243 / 77%);
-    align-items: center;
-    font-family: 'Montserrat', sans-serif;
-    padding: 50px;
-    width: 100%;
-    /* border-top: 1px solid white; */
-    height: 100vh;
-    /* border-left: 1px solid white; */
-    /* box-shadow: 0 0 60px 0 rgb(0 0 0); */
     display: flex;
     flex-direction: column;
+    overflow-y: auto;
+    height: 315px;
 }
 
 .sosten {    
     display: flex;
-    height: auto;}
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    padding: 50px;
+}
 
 .elimina-todo {
     background-color:#151414;
@@ -67,6 +68,13 @@
 .sigue-comprando {
     background-color: #f9c900;
     color: black;
+    font-size: 1rem;
+}
+
+.seguir {
+    background: none;
+    color: white;
+    font-size: .8rem;
 }
 
 .contieneCartHijoBoton {
@@ -117,22 +125,22 @@
 }
 
 .productoCart {
-
+    grid-column-end: 2;
     width: 100%;
-    padding: 10px 10px 5px 10px;
     font-weight: 500;
-    color: black;
+    color: white;
     font-family: 'Montserrat';
     font-size: 1rem;
     align-items: center;
     display: flex;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    grid-column-start: 1;
 }
-
 
 .botonCart {
     font-family: 'Montserrat';
     font-weight: 500;
-    font-size: 1rem;
     border: none;
     height: 5vh;
     display: flex;
@@ -140,8 +148,11 @@
     justify-content: center;
     cursor: pointer;
     width: 50%;
-    margin-top: 1rem;
     text-decoration: none;
+}
+
+.botonCart:hover {
+    color: #FB106C;
 }
 
 .sigue-comprando:hover {
@@ -156,27 +167,6 @@
     color: black;
 }
 
-.totalDeCompraForm {
-    /* color:#f9c900;
-    display: flex;
-    padding: 20px;
-    border: 1px solid white;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    font-size: 1.5rem;
-    font-family: 'Montserrat'; */
-    color: black;
-    display: flex;
-    padding: 0px;
-    /* border: 1px solid; */
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    font-size: 1.4rem;
-    font-family: 'Montserrat';
-    margin-top: 3rem;
-}
 
 .borra-btn-x {
     display: flex;
@@ -200,29 +190,27 @@
     display: flex;
     flex-direction: row;
     width: 100%;
-    color:#151414;
+    color: white;
+    grid-column-start: 3;
+    grid-column-end: 4;
 }
 
 .controllers {
     gap: 1rem;
     display: flex;
-
     align-items: center;
     justify-content: center;
     flex-direction: row;
-    padding: 0px;
     width: auto;
     background: none;
 }
 
 .negativoProducts {
     font-family: 'Montserrat';
-    color: black;
-    /* padding: 40px; */
+    color: white;
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* gap: 2rem; */
     font-weight: 500;
     font-size: 1rem;
 
@@ -245,7 +233,6 @@
 }
 
 
-
 .listado {
     display: flex;
     flex-direction: row;
@@ -260,48 +247,16 @@
 }
 
 .contieneForm {
-    /* background-color: #151414;
-    align-items: center;
-    font-family: 'Montserrat', sans-serif;
-    padding: 50px;
-    width: 30%;
-    display: flex;
-    height: 100vh;
-    box-shadow: 0 0 60px 0 rgb(0 0 0);
-    flex-direction: column;
-    justify-content: center; */
-
-    /* background-color: #151414;
-    align-items: center;
-    font-family: 'Montserrat', sans-serif;
-    padding: 0px 50px 50px 50px;
-    width: 60%;
-    display: flex;
-    height: 100vh;
-    box-shadow: 0px 50px 60px 0px rgb(0 0 0);
-    flex-direction: column;
-    justify-content: center;
-    margin-bottom: 5rem; */
     background-color: #151414;
     align-items: center;
     font-family: 'Montserrat', sans-serif;
-    padding: 0px 50px 50px 50px;
     width: 100%;
     display: flex;
-    height: 100vh;
-    /* box-shadow: 0px 50px 60px 0px rgb(0 0 0); */
     flex-direction: column;
+    gap: 2rem;
 }
 
 .tituloFormCompletar {
-    /* color: white;
-    font-size: 1.7rem;
-    font-weight: 400;
-    margin-bottom: .5rem;
-    margin-top: 2rem;
-    justify-content: center;
-    display: flex; */
-
     color: white;
     font-size: 1.7rem;
     font-weight: 400;
@@ -313,34 +268,23 @@
 }
 
 .layout {
-    /* display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    width: 100%; */
-
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: row;
     width: 100%;
-    margin-top: 2rem;
 }
 
 .textTar {
-    /* display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    color: white;
-    width: auto; */
-
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     color: #151414;
     width: 100%;
+    height: auto;
+    margin-top: 10rem;
+    font-family: 'Montserrat';
 }
 
 .boucher {

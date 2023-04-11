@@ -1,5 +1,5 @@
 .marciano {
-    background-color: #403bef;
+    border: 2px solid white;
     width: 100%;
     display: flex;
     align-items: center;
@@ -7,7 +7,9 @@
 }
 
 .marciano:hover {
-    background-color: #fb106c;
+    /* background-color: #fb106c; */
+    background-color: #403bef;
+    border: 2px solid #403bef;
 }
 
 .marciano-pic {
@@ -21,6 +23,8 @@
     color: white;
     height: auto;
     padding: 10px;
+    align-items: center;
+    justify-content: center;
 }
 
 .data-marciano {
@@ -36,9 +40,11 @@
 .titulo,
 .precio {
     padding-bottom: 10px;
+    color: white;
 }
 
-.botonCompra {
+
+.boton-preC {
     margin-top: 15px;
     font-family: 'Montserrat';
     font-weight: 500;
@@ -54,9 +60,12 @@
     width: 100%;
 }
 
-.botonCompra:hover {
+.boton-preC:hover {
     background-color: white;
 }
+
+
+
 
 
 
