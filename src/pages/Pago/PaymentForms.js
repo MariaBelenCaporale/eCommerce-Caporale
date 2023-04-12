@@ -39,7 +39,7 @@ const PaymentForms = () => {
             'success'
         )
         e.target.reset();
-
+        clear();
     }
 
 

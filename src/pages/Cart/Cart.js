@@ -44,7 +44,7 @@ const Cart = () => {
                 }
                 
             }),
-            total: total,
+            // total: total,
         })
             .then((response) => {
                 console.log(response.id);
@@ -86,7 +86,6 @@ const Cart = () => {
 
             <div className='contieneCart'>
                 <div className='contieneForm'>
-
                     <div className='layout'>
                         <PaymentForms />
                     </div>
@@ -98,8 +97,9 @@ const Cart = () => {
                         <div className='totalDeCompraForm'>
                             {cart.length > 0 && (<h2 className='total2'>Total: USD {total} </h2>)}
                         </div>
-                        </div>
+                    </div>
                     <div className='contieneCartHijo'>
+                    
                         {
                             cart.length === 0 && (
                                 <h2 className='negativoProducts'>No hay productos en el carrito</h2>
@@ -112,11 +112,11 @@ const Cart = () => {
                                 </div>
                             </div>
                         ))}
-
-                       
-                
                     </div>
+
                 </div>
+
+
 
             </div>
            

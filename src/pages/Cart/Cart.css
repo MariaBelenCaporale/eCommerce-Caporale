@@ -14,13 +14,7 @@
 .fijoTotal {
     justify-content: center;
     display: flex;
-    /* overflow-y: auto; */
-    /* height: 194px; */
     align-items: center;
-    position: absolute;
-    margin-bottom: 350px;
-    background:#151414;
-    width: 80%;
     height: 65px;
 }
 
@@ -28,9 +22,10 @@
     height: auto;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     width: 100%;
     flex-direction: row;
+    border: 1px solid white;
     padding-right: 0;
     flex-direction: column;
     position: relative;
@@ -40,14 +35,12 @@
 .contieneCartHijo {
     align-items: center;
     font-family: 'Montserrat', sans-serif;
-    padding: 100px 50px 0px 50px;
     width: auto;
-    border: 1px solid white;
     height: auto;
     display: flex;
     flex-direction: column;
     overflow-y: auto;
-    height: 315px;
+    height: 348px;
 }
 
 .sosten {    
@@ -109,7 +102,7 @@
 .contieneTodito {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content:flex-start;
     width: 100%;
 }
 

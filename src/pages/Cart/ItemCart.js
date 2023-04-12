@@ -9,6 +9,7 @@ const ItemCart = ({ product }) => {
 
     const [quantity, setQuantity] = useState(product.quantity);
 
+
     useEffect(() => {
         updateItem(product.id, quantity);
     }, [quantity])
