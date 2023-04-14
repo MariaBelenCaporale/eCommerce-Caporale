@@ -4,16 +4,7 @@ import 'react-credit-cards-2/es/styles-compiled.css';
 import './PaymentForms.css';
 import swal from 'sweetalert';
 import { useForm } from "react-hook-form"
-import { toBeRequired } from '@testing-library/jest-dom/dist/matchers';
-import Cart from '../Cart/Cart';
 import { CartContext } from '../../Context/CartContext';
-import { Button } from 'react-bootstrap';
-import { click } from '@testing-library/user-event/dist/click';
-import { clear } from '@testing-library/user-event/dist/clear';
-
-
-
-
 
 
 
@@ -25,9 +16,6 @@ const PaymentForms = () => {
     const { register, formState: { errors }, handleSubmit } = useForm({
         mode: "all"
     });
-
-
-
 
 
 
@@ -65,11 +53,6 @@ const PaymentForms = () => {
             focus: e.target.name
         })
     }
-
-  
-
-
-
 
 
 

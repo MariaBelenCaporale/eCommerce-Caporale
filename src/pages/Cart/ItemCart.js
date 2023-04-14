@@ -13,6 +13,7 @@ const ItemCart = ({ product }) => {
     useEffect(() => {
         updateItem(product.id, quantity);
     }, [quantity])
+
     
     return (
         <>

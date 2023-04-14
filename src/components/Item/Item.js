@@ -1,8 +1,6 @@
 import './Item.css';
 import { Link } from "react-router-dom";
-
 import { useContext, useEffect, useState } from 'react';
-
 import CartW from '../../pages/Cart/CartW';
 import { useNavigate } from 'react-router-dom';
 import { CartContext } from '../../Context/CartContext';
@@ -18,6 +16,9 @@ const Item = ({ product }) => {
         const navigate = useNavigate();
 
         const { addItem } = useContext(CartContext);
+
+
+        
 
         const [count, setCount] = useState(product?.stock === 0 ? 0 : 1);
 

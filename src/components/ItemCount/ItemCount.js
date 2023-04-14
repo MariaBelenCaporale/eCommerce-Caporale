@@ -1,14 +1,12 @@
 import './ItemCount.css';
-import {  useContext} from 'react';
+import {  useContext } from 'react';
 import { CartContext } from '../../Context/CartContext';
-import { clear } from '@testing-library/user-event/dist/clear';
 
 
-const ItemCount = ({ count, setCount, product }) => {
+const ItemCount = ({ count, setCount}) => {
 
 
-    const { cart, clear, removeItem, total } = useContext(CartContext);
-
+    const { cart, clear, removeItem, produc } = useContext(CartContext);
 
     const onAdd = () => {
         setCount(count + 1);
@@ -17,12 +15,10 @@ const ItemCount = ({ count, setCount, product }) => {
 
     const restar = () => {
         if (count === 1) {
-            clear()
+            return;
         } 
         setCount(count - 1);
     };
-
-
 
 
     return (
