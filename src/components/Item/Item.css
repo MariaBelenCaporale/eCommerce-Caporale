@@ -174,13 +174,13 @@
 @media screen and (min-width: 320px) and (max-width: 399px) {
     
     .marciano {
-        background-color: #403bef;
         width: 100%;
         display: grid;
         align-items: center;
         height: auto;
-        grid-template-rows: 1fr 1fr;
+        grid-template-rows: 1fr;
         justify-content: center;
+        border: 2px solid white;
     }
 
     .marciano-info {
@@ -191,12 +191,21 @@
     }
 
     .marciano-pic {
-        width: 40%;
+        width: 30%;
         padding: 20px 20px 7px 20px;
     }
 
     .data-marciano {
-        padding: 0px 10px 10px 10px;
+        padding: 10px 20px 20px 20px;
         width: auto;
+    }
+
+    .detalle {
+        line-height: 1.4;
+    }
+
+    .marciano:hover {
+        background: none;
+        border: 2px solid white;
     }
 }

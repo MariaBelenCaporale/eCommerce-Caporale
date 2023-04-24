@@ -103,6 +103,7 @@ const PaymentForms = () => {
                         <input className='inputTar' {...register("name", {
                             required: "Ingresar datos",
                             pattern: {
+                                
                                 value: /\s[a-z]+(?:[ \t]*?[a-z]+)?[ \t]*[a-z]+\b/,
                                 message: "Completar datos"
                             }
@@ -151,7 +152,7 @@ const PaymentForms = () => {
 
                         <input className='inputTar'{...register("cvc", {
                             required: {
-                                value: 4,
+                                value: 3,
                                 message: "Solo números"
                             },
                             pattern: {
@@ -159,11 +160,11 @@ const PaymentForms = () => {
                                 message: "Solo números",
                             },
                             minLength: {
-                                value: 4,
+                                value: 3,
                                 message: "Faltan datos"
                             },
                             maxLength: {
-                                value: 4,
+                                value: 3,
                                 message: "Datos incorrectos"
                             },
                         })}

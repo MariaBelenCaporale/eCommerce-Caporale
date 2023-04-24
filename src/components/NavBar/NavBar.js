@@ -6,6 +6,7 @@ import { Link, NavLink } from 'react-router-dom';
 import BurguerButton from './BurguerButton';
 import React, { useState } from 'react';
 import { click } from '@testing-library/user-event/dist/click';
+import PaymentForms from '../../pages/Pago/PaymentForms';
 
 const NavBar = () => {
 
@@ -52,6 +53,8 @@ const NavBar = () => {
                     <div className='carro' onClick={handleClick}>
                         <CartWidget />
                     </div>
+
+                    
                 </ul>
             </div>
             {/* 

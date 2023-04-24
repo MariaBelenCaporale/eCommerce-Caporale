@@ -1,17 +1,26 @@
+import { isDisabled } from "@testing-library/user-event/dist/utils";
 import React from "react";
 import { ButtonGroup, Overlay } from "react-bootstrap";
 import './Modal.css'
+import { ToastContainer } from "react-toastify";
+import useScreenSize from "../Screen/Screen";
+
 const Modal = ({children, estado, cambiarEstado}) => {
-
-
-    
+    const { width} = useScreenSize();
+   
+  
+   
+       
     return (
+
+        
         // onClick={() => cambiarEstado(false)}
         <>
-        {estado && 
+         {width >= 700 && estado && 
         <div className="overlay" onClick={() => cambiarEstado()}>
             <div className="contenedorModal" onClick={(e) => e.stopPropagation()}>
                 <div className="encabezado">
+               
                     <h2>Carrito</h2>
                 </div>
                 
@@ -27,6 +36,7 @@ const Modal = ({children, estado, cambiarEstado}) => {
                  </div>
         </div>
 }
+        
         </>
     )
 }

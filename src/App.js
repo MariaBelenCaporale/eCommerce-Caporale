@@ -1,5 +1,5 @@
 import './App.css';
-import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import NavBar from '../src/components/NavBar/NavBar';
 import ItemListContainer from './pages/ItemListContainer/ItemListContainer'
 import ItemDetailContainer from './pages/ItemDetailContainer/ItemDetailContainer';
@@ -11,6 +11,7 @@ import Cart from './pages/Cart/Cart';
 import CartProvider from './Context/CartProvider';
 import 'react-toastify/dist/ReactToastify.css';
 import Loader from './components/Loader/Loader';
+import PaymentForms from './pages/Pago/PaymentForms';
 
 
 

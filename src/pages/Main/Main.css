@@ -354,43 +354,25 @@
 }
 
  @media screen and (min-width: 481px) and (max-width: 768px) {
-
+      
     .container-inicio {
-        height: 100vh;
-    }
-
-    .tituloWeb {
-        justify-content: center;
-    }
-
-    .planetita {
-        display: flex;
-        align-items: center;
-        justify-content: flex-start;
-        margin-left: 60px;
-    }
-
-    .planeta {
-        width: 35%;
-    }
-
-    .containerTitulo {
         width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        height: 100vh;
+        background-position: bottom;
     }
 
     .expePadreMain {
+        display: flex;
+        align-items: center;
+        justify-content: center;
         flex-direction: column-reverse;
     }
 
-    .astroMain {
-        width: 40%;
-    }
-
     .astronautaMain {
-        padding-top: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
     }
 
     @keyframes astroMain {
@@ -411,9 +393,56 @@
         animation-direction:alternate;
     }
 
+    .span {
+        padding-top: 10px;
+        padding-bottom: 9px;
+        height: 6vh;
+        padding-left: 3px;
+        padding-right: 3px;
+    }
+
+    .spanAdquiri {
+        padding-top: 2px;
+        padding-bottom: 2px;
+        padding-right: 9px;
+        padding-left: 9px;
+    }
+
     .sectio {
-        margin-top: 15%;
-        margin-bottom: 15%;
+        margin-top: 20% !important;
+        margin-bottom: 20% !important;
+    }
+
+    .quienesHijo {
+        align-items: center;
+        justify-content: center;
+        font-size: 2rem;
+    }
+
+    .orden {
+        padding-left: 57px;
+        padding-top: 100px;
+        padding-right: 10px;
+        padding-bottom: 100px;
+    }
+
+    .containerTitulo {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .planeta {
+        width: 50%;
+        margin-left: 10px;
+    }
+
+    .container-img {
+        display: none;
+    }
+
+    .tituloWeb {
+        font-size: 2.7rem;
+        justify-content: center;
     }
 
     .tituloExpMain {
@@ -424,49 +453,60 @@
         width: 100%;
         flex-direction: column;
         margin-top: 1.5rem;
+        margin-bottom: 2rem;
     }
 
     .adquiriHijoMain {
+        font-size: 2.5rem;
         justify-content: center;
-        font-size: 3rem;
-    }
-
-    .spanAdquiri {
-        height: 9vh;
-    }
-
-    .quienesHijo {
-        justify-content: center;
-    }
-
-    .orden {
-        gap: 2rem;
-        padding-top: 0px;
-        display: flex;
         align-items: center;
-        padding-bottom: 30px;
-        justify-content: center;
+        text-align: center;
+    }
+
+    .astroMain {
+        width: 70%;
+        padding-top: 50px;
+    }
+
+    .adquiriTextoMain {
+        width: 70%;
+        text-align: center;
+    }
+
+    .quienesPadre {
+        height: auto;
+    }
+
+    .ovni-padre img {
+        display: none;
     }
 
     .ovni-padre {
         display: none !important;
     }
 
-    .container-img {
-        display: none;
+    .orden {
+        padding-right: 17px;
+        padding-left: 17px;
+        gap: 2rem;
+        padding-top: 40px;
+        display: flex;
+        align-items: center;
     }
 
     .quienesSomos {
-        font-size: 3rem;
+        align-items: center;
+        font-size: 2.5rem;
+        justify-content: center;
+        display: flex;
         text-align: center;
-        width: 50%;
+        width: 80%;
     }
 
     .quienesTexto {
-        width: 100%;
         text-align: center;
     }
-} 
+}
 
 @media screen and (min-width: 400px) and (max-width: 480px) {
     
@@ -568,20 +608,23 @@
         width: 100%;
         flex-direction: column;
         margin-top: 1.5rem;
+        margin-bottom: 2rem;
     }
 
     .adquiriHijoMain {
         font-size: 2.5rem;
         justify-content: center;
+        align-items: center;
+        text-align: center;
     }
 
     .astroMain {
         width: 70%;
-        padding-top: 10px;
+        padding-top: 50px;
     }
 
     .adquiriTextoMain {
-        width: 87%;
+        width: 70%;
         text-align: center;
     }
 
@@ -663,7 +706,7 @@
     
     .astroMain {
         width: 70%;
-        padding-top: 10px;
+        padding-top: 40px;
     }
 
     .span {
@@ -688,6 +731,8 @@
 
     .quienesTexto {
         text-align: center;
+        height: 116px;
+        overflow: hidden;
     }
 
     .quienesHijo {
@@ -736,6 +781,7 @@
     .adquiriHijoMain {
         font-size: 2rem;
         justify-content: center;
+        text-align: center;
     }
 
     .adquiriTextoMain {
