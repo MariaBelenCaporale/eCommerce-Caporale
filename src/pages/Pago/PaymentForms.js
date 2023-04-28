@@ -11,7 +11,7 @@ import { CartContext } from '../../Context/CartContext';
 
 const PaymentForms = () => {
 
-    const { cart, clear, removeItem, total } = useContext(CartContext);
+    const { clear } = useContext(CartContext);
 
     const { register, formState: { errors }, handleSubmit } = useForm({
         mode: "all"
@@ -100,11 +100,11 @@ const PaymentForms = () => {
                     <div className='form-group'>
                         <label className='labelTar' htmlFor='name'></label>
 
-                        <input className='inputTar' {...register("name", {
+                        <input type="Text" className='inputTar' {...register("name", {
                             required: "Ingresar datos",
                             pattern: {
-                                
-                                value: /\s[a-z]+(?:[ \t]*?[a-z]+)?[ \t]*[a-z]+\b/,
+                                 
+                                value: "^[a-zA-ZñÑáéíóúÁÉÍÓÚ]+$",
                                 message: "Completar datos"
                             }
                         })}
@@ -155,6 +155,7 @@ const PaymentForms = () => {
                                 value: 3,
                                 message: "Solo números"
                             },
+                            
                             pattern: {
                                 value: /^([0-9])*$/,
                                 message: "Solo números",
@@ -168,7 +169,8 @@ const PaymentForms = () => {
                                 message: "Datos incorrectos"
                             },
                         })}
-                            placeholder='1234'
+                        
+                            placeholder='123'
                             onChange={handleInputChange}
                             onFocus={handleFocusChange}
                         />

@@ -65,6 +65,10 @@
 }
 
 
+.Toastify__toast-container {
+    display: none;
+}
+
 
 
 
@@ -135,6 +139,13 @@
         color: black;
         font-family: 'Montserrat';
     }
+
+    .Toastify__toast-container {
+        display:inline;
+        --toastify-color-progress-light: #403bef;
+    }
+
+    
 }
 
 @media screen and (min-width: 400px) and (max-width: 480px) {
@@ -208,4 +219,7 @@
         background: none;
         border: 2px solid white;
     }
+
+
+
 }
