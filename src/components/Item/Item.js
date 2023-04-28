@@ -24,7 +24,9 @@ const Item = ({ product }) => {
         const { addItem } = useContext(CartContext);
 
 
-        const notify = () => toast("Producto agregado");
+        const notify = () => toast("Producto agregado",{
+                autoClose: 2000,
+        })
 
         const [count, setCount] = useState(product?.stock === 0 ? 0 : 1);
 

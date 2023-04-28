@@ -156,7 +156,7 @@
         height: auto;
         grid-template-rows: 1fr;
         justify-content: center;
-        border: 2px solid white;
+        border: 1px solid white;
     }
 
     .marciano-info {
@@ -177,7 +177,7 @@
     }
 
     .data-marciano {
-        padding: 0px 10px 10px 10px;
+        padding: 0px 20px 20px 20px;
         width: auto;
     }
 
@@ -189,6 +189,10 @@
     .Toastify__toast-container {
         display:inline;
         --toastify-color-progress-light: #403bef;
+        width: 80vw;
+        padding: 0;
+        right: 0;
+        margin: 0;
     }
 }
 
@@ -217,7 +221,7 @@
     }
 
     .data-marciano {
-        padding: 0px 20px 20px 20px;
+        padding: 10px 20px 20px 20px;
         width: auto;
     }
 
@@ -233,6 +237,10 @@
     .Toastify__toast-container {
         display:inline;
         --toastify-color-progress-light: #403bef;
+        width: 80vw;
+        padding: 0;
+        right: 0;
+        margin: 0;
     }
 
 }
