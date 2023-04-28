@@ -73,15 +73,21 @@
 
 
 
-@media screen and (min-width: 760px) and (max-width: 1024px) {
+@media screen and (min-width: 769px) and (max-width: 1024px) {
     .marciano {
-        background-color: #403bef;
         width: 100%;
         display: grid;
         align-items: center;
         height: auto;
         grid-template-rows: 1fr 1fr;
         justify-content: center;
+        border: 1px solid white;
+        height: 80vh;
+    }
+
+    .marciano:hover {
+        background: none;
+        border: 1px solid white;
     }
 
     .marciano-info {
@@ -109,13 +115,14 @@
 
 @media screen and (min-width: 481px) and (max-width: 768px) {
     .marciano {
-        background-color: #403bef;
         width: 100%;
         display: grid;
         align-items: center;
         height: auto;
-        grid-template-rows: 1fr 1fr;
+        grid-template-rows: 1fr;
         justify-content: center;
+        border: 1px solid white;
+        height: 80vh;
     }
 
     .marciano-info {
@@ -125,13 +132,18 @@
         width: auto;
     }
 
+    .marciano:hover {
+        background: none;
+        border: 1px solid white;
+    }
+
     .marciano-pic {
-        width: 40%;
+        width: 30%;
         padding: 20px 20px 7px 20px;
     }
 
     .data-marciano {
-        padding: 0px 10px 10px 10px;
+        padding: 0px 20px 20px 20px;
         width: auto;
     }
 
@@ -143,9 +155,11 @@
     .Toastify__toast-container {
         display:inline;
         --toastify-color-progress-light: #403bef;
+        width: 80vw;
+        padding: 0;
+        right: 0;
+        margin: 0;
     }
-
-    
 }
 
 @media screen and (min-width: 400px) and (max-width: 480px) {
@@ -168,7 +182,7 @@
 
     .marciano:hover {
         background: none;
-        border: 2px solid white;
+        border: 1px solid white;
     }
 
     .marciano-pic {
@@ -231,7 +245,7 @@
 
     .marciano:hover {
         background: none;
-        border: 2px solid white;
+        border: 1px solid white;
     }
 
     .Toastify__toast-container {
