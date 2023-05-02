@@ -47,12 +47,12 @@ const PaymentForms = () => {
         });
     }
 
-    const handleFocusChange = (e) => {
-        setState({
-            ...state,
-            focus: e.target.name
-        })
-    }
+    // const handleFocusChange = (e) => {
+    //     setState({
+    //         ...state,
+    //         focus: e.target.name
+    //     })
+    // }
 
 
 
