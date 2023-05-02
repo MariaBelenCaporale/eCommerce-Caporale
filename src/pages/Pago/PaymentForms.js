@@ -47,12 +47,12 @@ const PaymentForms = () => {
         });
     }
 
-    // const handleFocusChange = (e) => {
-    //     setState({
-    //         ...state,
-    //         focus: e.target.name
-    //     })
-    // }
+    const handleFocusChange = (e) => {
+        setState({
+            ...state,
+            focus: e.target.name
+        })
+    }
 
 
 
@@ -89,7 +89,7 @@ const PaymentForms = () => {
                         })}
                             placeholder=" 1234 1234 1234 1234"
                             onChange={handleInputChange}
-                            // onFocus={handleFocusChange}
+                            onFocus={handleFocusChange}
                         />
                         <p className='errores'>
                             {errors.number?.message}
@@ -110,7 +110,7 @@ const PaymentForms = () => {
                         })}
                             placeholder="Nombre y Apellido"
                             onChange={handleInputChange}
-                            // onFocus={handleFocusChange}
+                            onFocus={handleFocusChange}
                         />
                         <p className='errores'>
                             {errors.name?.message}
@@ -140,7 +140,7 @@ const PaymentForms = () => {
                         })}
                             placeholder='0925'
                             onChange={handleInputChange}
-                            // onFocus={handleFocusChange}
+                            onFocus={handleFocusChange}
                         />
                         <p className='errores'>
                             {errors.expiry?.message}
@@ -172,7 +172,7 @@ const PaymentForms = () => {
                         
                             placeholder='123'
                             onChange={handleInputChange}
-                            // onFocus={handleFocusChange}
+                            onFocus={handleFocusChange}
                         />
                         <p className='errores'>
                             {errors.cvc?.message}
@@ -191,7 +191,7 @@ const PaymentForms = () => {
                         })}
                             placeholder='ejemplo@ejemplo.com'
                             onChange={handleInputChange}
-                            // onFocus={handleFocusChange}
+                            onFocus={handleFocusChange}
                         />
                         <p className='errores'>
                             {errors.email?.message}
