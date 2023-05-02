@@ -134,6 +134,9 @@
 
     .tituloExp {
         margin-top: 8rem;
+        margin-left: 50px;
+        justify-content: flex-start;
+        
     }
 
     .expeTexto {
