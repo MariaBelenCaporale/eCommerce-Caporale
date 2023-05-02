@@ -23,7 +23,7 @@ const PaymentForms = () => {
         
         swal(
             'Pago realizado',
-            'En las próximas 24hs recibirás un email con tu boucher',
+            'Revisá tu mail, tu boucher te espera',
             'success'
         )
         e.target.reset();
@@ -212,11 +212,6 @@ const PaymentForms = () => {
 
 
             </div>
-             {/* <div className='botonPago'>
-                <button type="Submit" className='botonCart sigue-comprando compra'>
-                     Comprar
-                 </button>
-                 </div>  */}
 
 
         </div>

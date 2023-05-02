@@ -122,12 +122,12 @@
 }
 
 .swal-title {
-    color: black;
+    color: white;
     font-family: 'Montserrat';
 }
 
 .swal-text {
-    color: black;
+    color: white;
     font-family: 'Montserrat';
     text-align: center;
 }
@@ -145,8 +145,20 @@
 }
 
 .swal-modal {
-    background-color: white;
+    background-color: #151414;
 }
+.swal-icon--success:after, .swal-icon--success:before{
+    background-color:#151414 ;
+}
+
+.swal-icon--success__hide-corners {
+    background-color: #151414;
+}
+
+.swal-icon--success__line {
+    background-color: #403bef;
+}
+
 
 .swal-overlay--show-modal {
     opacity: 1;
@@ -162,10 +174,26 @@
     width: 80%;
 }
 
+.swal-icon--success__line {
+    color: #403bef;
+}
+
+.swal-icon--success__ring {
+    border: 4px solid #403bef
+}
+
 .rccs__card--unknown > div {
     background: linear-gradient(228deg, #151414, #403bef);
     box-shadow: none;
+}
 
+.swal-overlay {
+    background-color: #403befcc;
+}
+
+.swal-button {
+    background-color:#f9c900;
+    border-radius: 0;
 }
 
 .rccs {
@@ -202,7 +230,7 @@
 }
 
 @media screen and (min-width: 320px) and (max-width: 399px) {
-    
+
     .card-body {
         flex-direction: column;
         padding: 0;
