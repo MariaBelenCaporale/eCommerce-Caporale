@@ -297,10 +297,26 @@
 
 @media screen and (min-width: 400px) and (max-width: 480px) {
 
+    .fijoTotal {
+        justify-content: center;
+        display: flex;
+        align-items: center;
+        height: 65px;
+    }
+
+    .sosten {
+        padding: 50px 10px;
+    }
+
     .contieneCart {
         display: flex;
         flex-direction: column-reverse;
-        margin-top: 9rem;
+        margin-top: 0;
+    }
+
+    .counter {
+        grid-column-start: 1;
+        grid-column-end: 4;
     }
 
     .detailCart {
@@ -314,8 +330,20 @@
     }
 
     .productoCart {
-        padding: 5px 10px 5px 10px;
-        justify-content: center;
+        padding: 0;
+        justify-content: flex-start;
+
+        grid-column-end: 3;
+        width: 100%;
+        font-weight: 500;
+        color: white;
+        font-family: 'Montserrat';
+        font-size: 1rem;
+        align-items: center;
+        display: flex;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        grid-column-start: 1;
     }
 
     .borrarProducts {
@@ -335,8 +363,7 @@
     }
 
     .contieneCartHijo {
-        padding: 0;
-        height: auto;
+        padding: 30px;
     }
 
     .totalDeCompraForm {
@@ -361,7 +388,7 @@
     }
 
     .textTar {
-        margin-top: 2rem;
+        margin-top: 5rem;
     }
 
     .tituloFormCompletar {
@@ -379,10 +406,26 @@
 
 @media screen and (min-width: 320px) and (max-width: 399px) {
 
+    .fijoTotal {
+        justify-content: center;
+        display: flex;
+        align-items: center;
+        height: 65px;
+    }
+
+    .sosten {
+        padding: 50px 10px;
+    }
+
     .contieneCart {
         display: flex;
         flex-direction: column-reverse;
-        margin-top: 9rem;
+        margin-top: 0;
+    }
+
+    .counter {
+        grid-column-start: 1;
+        grid-column-end: 4;
     }
 
     .detailCart {
@@ -396,8 +439,20 @@
     }
 
     .productoCart {
-        padding: 5px 10px 5px 10px;
-        justify-content: center;
+        padding: 0;
+        justify-content: flex-start;
+
+        grid-column-end: 3;
+        width: 100%;
+        font-weight: 500;
+        color: white;
+        font-family: 'Montserrat';
+        font-size: 1rem;
+        align-items: center;
+        display: flex;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        grid-column-start: 1;
     }
 
     .borrarProducts {
@@ -417,8 +472,7 @@
     }
 
     .contieneCartHijo {
-        padding: 0;
-        height: auto;
+        padding: 30px;
     }
 
     .totalDeCompraForm {
@@ -443,7 +497,7 @@
     }
 
     .textTar {
-        margin-top: 2rem;
+        margin-top: 5rem;
     }
 
     .tituloFormCompletar {

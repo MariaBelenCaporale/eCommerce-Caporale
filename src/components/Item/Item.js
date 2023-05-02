@@ -1,6 +1,6 @@
 import './Item.css';
 import { Link } from "react-router-dom";
-import { useContext, useEffect, useState } from 'react';
+import { useContext, useState } from 'react';
 import CartW from '../../pages/Cart/CartW';
 import { useNavigate } from 'react-router-dom';
 import { CartContext } from '../../Context/CartContext';

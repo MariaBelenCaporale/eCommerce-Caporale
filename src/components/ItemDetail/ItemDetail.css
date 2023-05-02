@@ -218,8 +218,12 @@ background-color:#f9c900;
 
     .padreDetail {
         width: 100%;
-        padding: 0;
-        grid-template-columns: 1fr;
+        padding: 30px;
+        font-family: 'Montserrat', sans-serif;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        box-shadow: none;
     }
 
     .detail-name {
@@ -229,7 +233,6 @@ background-color:#f9c900;
     }
 
     .detalles {
-        padding: 20px;
         width: auto;
         margin-bottom: 2rem;
     }
@@ -247,21 +250,28 @@ background-color:#f9c900;
     }
 
     .detail {
-        padding: 20px 0px 20px 0px;
+        padding: 0px 0px 20px 0px;
     }
 
     .boton-pre {
         padding: 9px;
         margin-top: 15px;
         font-size: .8rem;
-        width: 100%;
-        color: black;
+        width: 80%;
     }
 
     .botonesPreCompra {
         flex-direction: column;
         gap: 0px;
         margin-top: 1rem;
+    }
+
+    .Toastify__toast-container {
+        display:inline;
+        --toastify-color-progress-light: #403bef;
+        width: 100vw;
+        padding: 0;
+        margin: 0;
     }
     
 }
@@ -325,6 +335,14 @@ background-color:#f9c900;
         flex-direction: column;
         gap: 0px;
         margin-top: 1rem;
+    }
+
+    .Toastify__toast-container {
+        display:inline;
+        --toastify-color-progress-light: #403bef;
+        width: 100vw;
+        padding: 0;
+        margin: 0;
     }
     
 }

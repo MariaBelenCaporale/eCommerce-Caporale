@@ -2,11 +2,11 @@
     cursor: pointer;
     border: none;
     width: 30px;
-    height: 4vh;
+    height: 30px;
     font-size: 1.2rem;
     background: none;
     color: white;
-    border-radius: 50%;
+    border-radius: 100%;
     border: 1px solid white;
 }
 
@@ -24,8 +24,3 @@
 }
 
 
-@media screen and (min-width: 400px) and (max-width: 480px){
-    .masMenos {
-        color: black;
-    }
-}
