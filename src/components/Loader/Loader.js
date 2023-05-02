@@ -15,7 +15,7 @@ const Loader = () => {
     
       const timeout = setTimeout(() => {
         setLoading(false);
-      }, 100000);
+      }, 4000);
     
       return () => {
         clearTimeout(timeout);
