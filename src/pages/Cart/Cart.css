@@ -19,7 +19,7 @@
 }
 
 .contieneCarte {
-    height: auto;
+    height: 348px;
     display: flex;
     align-items: center;
     justify-content: flex-start;
