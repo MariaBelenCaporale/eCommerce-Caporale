@@ -173,6 +173,10 @@
         border: 1px solid white;
     }
 
+    .boton-preC {
+        color: black;
+    }
+
     .marciano-info {
         padding: 0px;
         justify-content: center;

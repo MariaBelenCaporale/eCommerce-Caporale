@@ -23,7 +23,7 @@ const PaymentForms = () => {
         
         swal(
             'Pago realizado',
-            'Revisá tu mail, tu boucher te espera',
+            'Houston, su boucher lo espera. Revise su email',
             'success'
         )
         e.target.reset();
