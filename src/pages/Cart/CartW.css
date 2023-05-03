@@ -248,6 +248,12 @@
 }
 
 
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    .borrarProductsW {
+        grid-column-start: 4
+    }
+}
+
 @media screen and (min-width: 400px) and (max-width: 480px) {
     .borrarProductsW {
         grid-column-start: 4;
